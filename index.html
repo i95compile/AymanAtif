@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayman Atif | Full-Stack Web, Desktop & Mobile Developer</title>
+    <link rel="canonical" href="https://aymanzbuilding.github.io/Ayman-Atif/" />
+
+    <meta name="description"
+        content="I’m Ayman Atif, a full-stack developer specializing in web, desktop, and mobile applications. I deliver modern, high-performance, and visually polished projects.">
+
+    <meta property="og:title" content="Ayman Atif | Full-Stack Developer">
+    <meta property="og:description"
+        content="I build high-quality web, desktop, and mobile applications with modern designs and excellent user experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aymanzbuilding.github.io/Ayman-Atif/">
+    <meta property="og:image" content="https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ayman Atif | Full-Stack Developer">
+    <meta name="twitter:description"
+        content="I build high-quality web, desktop, and mobile applications with modern designs and excellent UX.">
+    <meta name="twitter:image" content="https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg">
+
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ayman Atif",
+  "url": "https://aymanzbuilding.github.io/Ayman-Atif/",
+  "image": "https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg",
+  "jobTitle": "Full-Stack Developer",
+  "sameAs": [
+    "https://www.linkedin.com/in/a95yman/",
+    "https://github.com/aymanbuilds",
+    "https://wa.me/212688459384"
+  ],
+  "description": "Full-stack developer specializing in web, desktop, and mobile applications. I create high-quality, modern, and functional digital experiences.",
+  "knowsAbout": [
+    "Web Development",
+    "Mobile Development",
+    "Desktop Applications",
+    "SEO",
+    "C#",
+    ".NET",
+    "Python",
+    "JavaScript",
+    "React",
+    "Tailwind CSS",
+    "SQL",
+    "UI/UX Design"
+  ]
+}
+</script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth
+        }
+
+        #mobileMenu.show a,
+        .fade-group.visible .fade-in {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        body {
+            font-family: Syne, Arial, sans-serif
+        }
+
+        .title-font {
+            font-family: Poppins, Arial, sans-serif
+        }
+
+        section {
+            scroll-margin-block-start: 80px
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-12px)
+            }
+        }
+
+        .faq-section {
+            background: #fff;
+            padding: 60px 0 80px
+        }
+
+        .faq-wrapper {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: start
+        }
+
+        .faq-left .faq-label {
+            color: #6b7280;
+            margin-bottom: 10px
+        }
+
+        .faq-left .faq-title {
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            margin-bottom: 20px
+        }
+
+        .faq-btn {
+            padding: 12px 24px;
+            background: #000;
+            color: #fff;
+            border-radius: 50px;
+            border: none
+        }
+
+        .faq-right {
+            display: flex;
+            flex-direction: column;
+            gap: 30px
+        }
+
+        .faq-item {
+            width: 100%
+        }
+
+        .faq-item input {
+            display: none
+        }
+
+        .faq-question {
+            display: block;
+            background: #eaeaf3;
+            padding: 22px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 550;
+            position: relative;
+            transition: background .3s
+        }
+
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 24px;
+            font-size: 22px;
+            top: 15px;
+            transition: transform .3s
+        }
+
+        .faq-item input:checked+.faq-question::after {
+            transform: rotate(45deg)
+        }
+
+        .faq-answer {
+            background: #f6f6ff;
+            margin-top: -18px;
+            padding: 0 22px;
+            border-radius: 0 0 40px 40px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .35s, padding .3s
+        }
+
+        .faq-item input:checked~.faq-answer {
+            max-height: 300px;
+            padding: 28px 22px 22px
+        }
+
+        @media (max-width:800px) {
+            .faq-wrapper {
+                grid-template-columns: 1fr
+            }
+        }
+
+        header.main {
+            position: sticky;
+            top: 0;
+            z-index: 9999999999;
+            transition: background-color .4s, padding .4s
+        }
+
+        .bg-eaeaf3 {
+            background-color: #eaeaf3 !important;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important
+        }
+
+        #bgName .letter {
+            line-height: 1
+        }
+
+        #bgName br {
+            display: block;
+            height: 0
+        }
+
+        @media (min-width:1001px) {
+            #bgName {
+                font-size: 20vw !important
+            }
+        }
+
+        @media (max-width:1000px) {
+            #bgName {
+                font-size: 22vw !important
+            }
+        }
+
+        #mobileMenu a {
+            transform: translateY(50px);
+            opacity: 0;
+            transition: transform .5s, opacity .5s
+        }
+
+        #mobileMenu.show a:first-child {
+            transition-delay: 0.1s
+        }
+
+        #mobileMenu.show a:nth-child(2) {
+            transition-delay: 0.2s
+        }
+
+        #mobileMenu.show a:nth-child(3) {
+            transition-delay: 0.3s
+        }
+
+        #mobileMenu.show a:nth-child(4) {
+            transition-delay: 0.4s
+        }
+
+        #mobileMenu.show a:nth-child(5) {
+            transition-delay: 0.5s
+        }
+
+        #mobileMenu.show a:nth-child(6) {
+            transition-delay: 0.6s
+        }
+
+        #mobileMenu:not(.show) a {
+            transition-delay: 0s !important
+        }
+
+        @media (max-width:768px) {
+            #contact {
+                padding-bottom: 0
+            }
+
+            footer {
+                padding-top: 40px
+            }
+
+            .title-font,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: 1.7rem !important;
+                line-height: 1.1rem
+            }
+        }
+
+        .fade-group .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .3s ease-out, transform .3s ease-out
+        }
+
+        #home {
+            scroll-margin-block-start: 280px
+        }
+    </style>
+</head>
+
+<body class="bg-[#eaeaf3]">
+
+    <!-- HEADER -->
+    <header class="main w-full py-6 fixed top-0 left-0 z-50 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center relative">
+
+            <!-- LOGO / LEFT NAV (hidden on mobile) -->
+            <div class="bg-black py-3 px-6 rounded-full hidden md:flex">
+                <nav class="flex items-center gap-8 text-white font-semibold">
+                    <a href="#home" class="hover:text-gray-300 transition">Home</a>
+                    <a href="#services" class="hover:text-gray-300 transition">Services</a>
+                    <a href="#about" class="hover:text-gray-300 transition">About</a>
+                    <a href="#work" class="hover:text-gray-300 transition">UI Showcase</a>
+                    <a href="#testimonials" class="hover:text-gray-300 transition">Testimonials</a>
+                </nav>
+            </div>
+
+            <!-- HIRE ME BUTTON (hidden on mobile) -->
+            <a href="#contact"
+                class="hidden md:flex items-center gap-3 bg-white text-black p-1.5 pr-4 rounded-full shadow-md transition duration-300 hover:bg-gray-100 hover:scale-105 hover:shadow-xl">
+                <div
+                    class="w-10 h-10 flex items-center justify-center bg-black text-white rounded-full transition duration-300 hover:bg-white hover:text-black">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                Hire Me
+            </a>
+
+            <!-- MENU BUTTON (mobile only) -->
+            <button id="menuBtn" class="md:hidden text-black p-2 rounded-md focus:outline-none z-50"
+                aria-label="Open menu">
+                <i class="bi bi-list text-3xl"></i>
+            </button>
+
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu"
+            class="fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center space-y-6 text-white text-2xl transform translate-y-full transition-transform duration-500 ease-in-out">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#work">UI Showcase</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Hire Me</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative max-w-7xl mx-auto px-6 mt-24 text-center">
+
+            <!-- BACKGROUND NAME -->
+            <div id="bgName" class="absolute inset-0 flex items-center justify-center pointer-events-none select-none
+               font-extrabold text-gray-400 opacity-20 tracking-tight title-font">
+                AYMAN
+            </div>
+
+            <!-- FOREGROUND HERO CONTENT -->
+            <div class="relative z-10">
+                <h1 class="title-font text-5xl md:text-6xl font-extrabold text-black leading-tight">
+                    Creative Developer<br />Crafting Modern Experiences
+                </h1>
+
+                <p class="mt-6 text-lg text-gray-700 max-w-xl mx-auto">
+                    I build visually polished and highly functional websites that blend performance, clarity, and great
+                    user
+                    experience.
+                </p>
+
+                <div class="flex justify-center">
+                    <a href="#services"
+                        class="mt-8 block w-auto self-center bg-black text-white px-10 py-3 rounded-full shadow-md transition hover:bg-gray-800 hover:scale-105">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="max-w-7xl mx-auto px-6 mt-32 pb-8">
+            <!-- TITLE + SUBTITLE -->
+            <div class="mb-16 fade-group">
+                <h2 class="fade-in text-4xl md:text-5xl font-extrabold text-left text-black title-font">My Services</h2>
+                <p class="fade-in mt-4 text-gray-700 max-w-xl ml-8">
+                    I provide a wide range of services, from web and mobile development to desktop solutions and SEO
+                    optimization.
+                </p>
+            </div>
+
+            <!-- FIRST ROW -->
+            <div class="flex flex-col md:flex-row gap-8 mb-8 fade-group">
+                <!-- CARD 1 (40%, white, left-aligned) -->
+                <div class="fade-in bg-white rounded-2xl p-8 flex flex-col justify-between w-full md:w-[40%]">
+                    <p class="text-gray-600 mb-8">Custom websites crafted with performance, accessibility, and
+                        scalability
+                        in mind. Great for startups and enterprises alike.</p>
+                    <div class="flex flex-wrap justify-between items-center">
+                        <h3 class="text-2xl font-bold">Web Development</h3>
+                        <span class="text-3xl font-extrabold text-gray-800">01</span>
+                    </div>
+                </div>
+
+                <!-- CARD 2 (60%, gradient, reversed content) -->
+                <div class="fade-in bg-gradient-to-br from-violet-500 to-purple-700 text-white rounded-2xl p-8 flex flex-col-reverse justify-between w-full md:w-[60%]"
+                    style="clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0% 100%);">
+                    <div class="flex flex-wrap justify-between items-center md:flex-row-reverse">
+                        <h3 class="text-2xl font-bold">Desktop Applications</h3>
+                        <span class="text-3xl font-extrabold">02</span>
+                    </div>
+                    <p class="mb-8">Robust desktop apps for productivity, finance, and enterprise solutions, tailored to
+                        your needs.</p>
+                </div>
+            </div>
+
+            <!-- SECOND ROW -->
+            <div class="flex flex-col md:flex-row gap-8 fade-group">
+                <!-- CARD 3 (60%, gradient) -->
+                <div
+                    class="fade-in bg-gradient-to-br from-violet-500 to-purple-700 text-white rounded-2xl p-8 flex flex-col justify-between w-full md:w-[60%]">
+                    <p class="mb-8">Creating intuitive mobile applications for iOS and Android with great UX, smooth
+                        animations, and high performance.</p>
+                    <div class="flex flex-wrap justify-between items-center">
+                        <h3 class="text-2xl font-bold">Mobile Development</h3>
+                        <span class="text-3xl font-extrabold">03</span>
+                    </div>
+                </div>
+
+                <!-- CARD 4 (40%, white, reversed content) -->
+                <div class="fade-in bg-white rounded-2xl p-8 flex flex-col-reverse justify-between w-full md:w-[40%]"
+                    style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%);">
+                    <div class="flex flex-wrap justify-between items-center md:flex-row-reverse">
+                        <h3 class="text-2xl font-bold">Support & SEO</h3>
+                        <span class="text-3xl font-extrabold text-gray-800">04</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Ongoing support, website optimization, and SEO strategies for
+                        continuous
+                        growth and visibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="relative max-w-7xl mx-auto rounded-3xl bg-white px-6 py-24 overflow-hidden">
+
+            <!-- WATERMARK NAME -->
+            <div class="absolute inset-0 flex justify-center items-center pointer-events-none select-none">
+                <h1
+                    class="text-[150px] md:text-[200px] font-extrabold text-gray-300 opacity-20 transform -rotate-12 tracking-tight">
+                    AYMAN ATIF
+                </h1>
+            </div>
+
+            <!-- CONTENT OVER WATERMARK -->
+            <div class="relative z-10">
+
+                <!-- ABOUT TOP SECTION -->
+                <div class="relative z-10 mb-16 px-4 sm:px-6 md:px-16">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 items-center fade-group">
+
+                        <!-- LEFT : TITLE + DESCRIPTION -->
+                        <div class="text-center md:text-left">
+                            <h2 class="fade-in text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 title-font">
+                                About Me
+                            </h2>
+                            <p
+                                class="fade-in mt-6 text-base sm:text-lg md:text-xl text-gray-700 max-w-xl mx-auto md:mx-0">
+                                I’m Ayman Atif, a full-stack developer with expertise in web, desktop, and mobile
+                                applications.
+                                I combine creativity with functionality to deliver polished, high-performance projects.
+                                Over the years, I’ve tackled dozens of projects, always prioritizing clean code,
+                                scalability,
+                                and excellent user experience. I enjoy learning new technologies, optimizing workflows,
+                                and building solutions that help businesses grow.
+                            </p>
+                        </div>
+
+                        <!-- RIGHT : FLOATING IMAGE -->
+                        <div class="flex justify-center md:justify-end mt-10 md:mt-0 fade-in">
+                            <div class="relative w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 
+                  animate-[float_5s_ease-in-out_infinite]">
+                                <img src="assets/images/ayman-atif.jpeg" alt="Ayman Atif, web developer"
+                                    class="w-full h-full object-cover rounded-full shadow-2xl transition-all duration-700 hover:scale-105 hover:-rotate-2" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- SKILLS GRID -->
+                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 fade-group">
+
+                    <!-- FRONTEND -->
+                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center relative"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">HTML</h3>
+                        <p class="text-white text-sm">Semantic Markup & Accessibility</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">CSS / Tailwind</h3>
+                        <p class="text-gray-700 text-sm">Responsive Layouts & Design</p>
+                    </div>
+
+                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);">
+                        <h3 class="font-bold text-lg mb-2">JavaScript</h3>
+                        <p class="text-white text-sm">ES6+, React & Frontend Logic</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">Frontend Architecture</h3>
+                        <p class="text-gray-700 text-sm">Components & State Management</p>
+                    </div>
+
+                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">UI / UX</h3>
+                        <p class="text-white text-sm">User-Centered Design</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">API Design</h3>
+                        <p class="text-gray-700 text-sm">RESTful & JSON APIs</p>
+                    </div>
+
+                    <!-- BACKEND -->
+                    <div
+                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">C# / .NET</h3>
+                        <p class="text-white text-sm">Backend Services & APIs</p>
+                    </div>
+
+                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">Python</h3>
+                        <p class="text-gray-700 text-sm">Backend Scripting & Automation</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">Java</h3>
+                        <p class="text-white text-sm">Backend Services & Android Apps</p>
+                    </div>
+
+                    <!-- DATABASES -->
+                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">SQL / MySQL</h3>
+                        <p class="text-gray-700 text-sm">Data Modeling & Queries</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">PostgreSQL</h3>
+                        <p class="text-white text-sm">Relational Database Management</p>
+                    </div>
+
+                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">Mobile Development</h3>
+                        <p class="text-gray-700 text-sm">iOS & Android Apps</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="work" class="w-full bg-neutral-900 text-white py-24 mt-8 fade-group">
+            <div class="max-w-3xl mx-auto text-center px-6">
+                <h2 class="fade-in text-5xl font-bold tracking-tight mb-6">UI Showcase</h2>
+                <p class="fade-in text-gray-400 text-lg leading-relaxed">
+                    A curated selection of interface templates and UI experiments, demonstrating clean design,
+                    thoughtful layouts,
+                    and smooth motion. Each example reflects my approach to building polished, high-quality user
+                    interfaces
+                    that balance aesthetics and usability.
+                </p>
+            </div>
+
+            <!-- PROJECT CONTAINER -->
+            <div class="max-w-6xl mx-auto mt-24 px-6 relative fade-in">
+
+                <!-- Floating UI Screens Wrapper -->
+                <div class="relative h-[600px] md:h-[700px] lg:h-[800px]">
+
+                    <!-- UI Screens -->
+                    <img src="assets/images/luxedwell-1.jpg" alt="UI Example 1: Modern interior layout"
+                        class="absolute w-48 md:w-64 lg:w-72 rounded-2xl shadow-2xl top-0 left-3 md:left-12 rotate-[2deg] hover:scale-105 transition-all" />
+
+                    <img src="assets/images/luxedwell-2.jpg" alt="UI Example 2: Clean interface layout"
+                        class="absolute w-40 md:w-56 lg:w-64 rounded-2xl shadow-2xl top-32 right-5 md:right-20 rotate-[-3deg] hover:scale-105 transition-all" />
+
+                    <img src="assets/images/luxedwell-3.jpg" alt="UI Example 3: Card-based interface design"
+                        class="absolute w-48 md:w-64 lg:w-72 rounded-2xl shadow-2xl bottom-10 left-10 rotate-[4deg] hover:scale-105 transition-all" />
+
+                    <img src="assets/images/luxedwell-4.jpg" alt="UI Example 4: Interactive layout demo"
+                        class="absolute w-40 md:w-56 lg:w-64 rounded-2xl shadow-2xl bottom-0 right-12 rotate-[5deg] hover:scale-105 transition-all" />
+
+                    <img src="assets/images/luxedwell-5.jpg" alt="UI Example 5: Central hero screen"
+                        class="absolute w-56 md:w-72 lg:w-80 rounded-3xl shadow-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-1deg] hover:scale-105 transition-all z-20" />
+
+                </div>
+
+                <!-- UI Text + CTA -->
+                <div class="mt-20 text-center max-w-3xl mx-auto">
+                    <h3 class="text-4xl font-bold mb-4 tracking-tight fade-in">LuxeDwell UI Template</h3>
+                    <p class="text-gray-300 leading-relaxed mb-8 fade-in">
+                        A clean, modern interface template showcasing elegant layouts, interactive elements,
+                        and visually pleasing hierarchy. Perfect for demonstrating UI design proficiency
+                        and front-end craftsmanship.
+                    </p>
+
+                    <a href="https://aymanbuilds.github.io/LuxeDwell/" target="_blank" class="fade-in inline-flex items-center gap-3 bg-white text-black px-7 py-3 rounded-full
+                hover:bg-neutral-200 transition-all shadow-lg">
+                        <span>Preview UI</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 fade-group">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <!-- Section Title + Description -->
+                <div class="text-center mb-16">
+                    <h2 class="fade-in text-5xl font-extrabold mb-6 title-font">Testimonials</h2>
+                    <p class="fade-in mt-6 text-lg text-gray-700 max-w-xl mx-auto">
+                        Hear from clients who have trusted me with their projects and loved the results.
+                    </p>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="fade-in grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Testimonial Card 1 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[2deg]">
+                        <p class="text-gray-800 mb-4">
+                            "Ayman built a desktop app for our e-commerce store. It works perfectly, and we continue
+                            collaborating for ongoing support."
+                        </p>
+                        <h3 class="font-bold">Simon</h3>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[1deg]">
+                        <p class="text-gray-800 mb-4">
+                            "Ayman developed two Odoo modules for our business, fully compliant with UK trading
+                            regulations. Excellent results!"
+                        </p>
+                        <h3 class="font-bold">Naseem</h3>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[1deg]">
+                        <p class="text-gray-800 mb-4">
+                            "He created a mobile app for our restaurant. We were thrilled with the results and continue
+                            receiving SEO support."
+                        </p>
+                        <h3 class="font-bold">Omar</h3>
+                    </div>
+
+                    <!-- Testimonial Card 4 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[2deg]">
+                        <p class="text-gray-800 mb-4">
+                            "Ayman helped our startup develop an AI-driven news solution MVP. It worked flawlessly and
+                            met all our expectations."
+                        </p>
+                        <h3 class="font-bold">Veelio</h3>
+                    </div>
+
+                    <!-- Testimonial Card 5 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[1.5deg]">
+                        <p class="text-gray-800 mb-4">
+                            "He built an AI solution for our printing service. We were very satisfied with the quality
+                            and delivery."
+                        </p>
+                        <h3 class="font-bold">Daan</h3>
+                    </div>
+
+                    <!-- Testimonial Card 6 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[1.5deg]">
+                        <p class="text-gray-800 mb-4">
+                            "Ayman created our website and handled SEO for our finance business. Exceptional work and
+                            very satisfied!"
+                        </p>
+                        <h3 class="font-bold">Susan</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-wrapper">
+
+                <!-- LEFT COLUMN -->
+                <div class="faq-left">
+                    <p class="mt-6 text-lg text-gray-700 max-w-xl mx-auto">
+                        Common Questions
+                    </p>
+                    <h2 class="text-5xl font-extrabold title-font">My FAQ</h2>
+
+                    <div class="flex">
+                        <a href="#contact"
+                            class="block w-auto self-start mt-10 flex items-center gap-3 bg-transparent border-2 border-neutral-900 text-neutral-900 p-1.5 pr-3.5 rounded-full shadow-md transition-all duration-300 hover:bg-neutral-900 hover:text-white hover:scale-105 hover:shadow-xl">
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-white text-neutral-900 rounded-full transition-all duration-300 hover:bg-neutral-900 hover:text-white">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="faq-right">
+
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq1">
+                        <label class="faq-question" for="faq1">What services do you offer?</label>
+                        <div class="faq-answer">
+                            I provide end-to-end development solutions including web, desktop, and mobile applications,
+                            as well as ongoing support, SEO, and optimization.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq2">
+                        <label class="faq-question" for="faq2">How do you price your projects?</label>
+                        <div class="faq-answer">
+                            Pricing depends on the project’s complexity and scope. I provide detailed quotes after
+                            understanding your requirements and goals.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq3">
+                        <label class="faq-question" for="faq3">What is your typical project timeline?</label>
+                        <div class="faq-answer">
+                            Timelines vary based on the type and size of the project. Smaller projects can take a few
+                            weeks, while larger solutions may take several months. I always provide a clear schedule
+                            upfront.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq4">
+                        <label class="faq-question" for="faq4">Do you offer post-launch support?</label>
+                        <div class="faq-answer">
+                            Yes, I offer maintenance, bug fixes, and ongoing support to ensure your application runs
+                            smoothly and stays up to date.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq5">
+                        <label class="faq-question" for="faq5">Which technologies do you specialize in?</label>
+                        <div class="faq-answer">
+                            I specialize in full-stack development using C#, .NET, Python, JavaScript, React, Tailwind
+                            CSS, SQL/NoSQL databases, and mobile development for iOS and Android.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-neutral-900 text-white py-24">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <h2 class="text-5xl font-extrabold mb-6 title-font text-center">
+                    Let's Make Something<br>Amazing Together
+                </h2>
+
+                <div class="flex flex-col md:flex-row md:divide-x md:divide-neutral-700 text-center mt-16">
+
+                    <!-- Item -->
+                    <div class="flex-1 px-8 py-10">
+                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Whatsapp</h3>
+                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
+                            <a href="https://wa.me/212688459384?text=Hi!" target="_blank">+212 688-459384</a>
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="flex-1 px-8 py-10">
+                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Email Address</h3>
+                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
+                            <a href="mailto:a95yman@gmail.com" target="_blank">a95yman@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="flex-1 px-8 py-10">
+                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Linkedin</h3>
+                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
+                            <a href="https://www.linkedin.com/in/a95yman/">@a95yman</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="bg-neutral-900 text-white pb-20">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <!-- Menu -->
+                <nav class="flex flex-wrap justify-center gap-8 text-sm mb-14 text-neutral-300">
+                    <a href="#home" class="hover:text-gray-300 transition">Home</a>
+                    <a href="#services" class="hover:text-gray-300 transition">Services</a>
+                    <a href="#about" class="hover:text-gray-300 transition">About</a>
+                    <a href="#work" class="hover:text-gray-300 transition">UI Showcase</a>
+                    <a href="#testimonials" class="hover:text-gray-300 transition">Testimonials</a>
+                </nav>
+
+                <!-- Main Footer CTA -->
+                <div class="text-center max-w-2xl mx-auto">
+                    <h3 class="text-3xl font-semibold mb-4">
+                        Your Ideas, My Code, Amazing Results.
+                    </h3>
+                    <p class="text-neutral-300 text-lg leading-relaxed mb-8">
+                        I specialize in web, desktop, and mobile applications, delivering modern, high-quality
+                        solutions. Let’s collaborate to turn your ideas into reality.
+                    </p>
+
+                    <div class="flex">
+                        <a href="https://wa.me/212688459384?text=Hi!" target="_blank"
+                            class="w-auto self-center mt-6 flex items-center gap-3 bg-neutral-900 text-white p-1.5 pr-3.5 rounded-full shadow hover:bg-neutral-800 transition mx-auto border border-neutral-700">
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-white text-neutral-900 rounded-full">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const bgName = document.getElementById("bgName"), rawText = bgName.textContent || "", words = rawText.trim().split(/\s+/), html = words.map((e => Array.from(e).map((e => `<span class="letter">${e}</span>`)).join(""))).join("<br>"); bgName.innerHTML = html; const letters = bgName.querySelectorAll(".letter"); let scrollTimeout; letters.forEach((e => { e.style.display = "inline-block", e.style.transition = "transform 0.45s cubic-bezier(.22,.9,.31,1), filter 0.45s ease", e.style.willChange = "transform, filter" })), window.addEventListener("scroll", (() => { const e = window.scrollY; letters.forEach(((t, n) => { let s = t, l = 0; for (; s.previousSibling;)s = s.previousSibling, "BR" === s.nodeName && l++; const r = .02 * l + n % 30 * .06, o = e * (.18 + .06 * l + n % 30 * .012) + 200, a = Math.min(e / (30 + n % 20), 10); 0 === e ? letters.forEach(((e, t) => { const n = .06 * t; e.style.transitionDelay = `${n}s`, e.style.transform = "translateY(0px)", e.style.filter = "blur(0px)" })) : (t.style.transitionDelay = `${r}s`, t.style.transform = `translateY(${o}px)`, t.style.filter = `blur(${a}px)`) })), clearTimeout(scrollTimeout), scrollTimeout = setTimeout((() => { letters.forEach((e => { e.style.filter = "blur(0px)", e.style.transitionDelay = "0s" })) }), 120) })); const menuBtn = document.getElementById("menuBtn"), mobileMenu = document.getElementById("mobileMenu"); let menuOpen = !1; function openMenu() { mobileMenu.style.transform = "translateY(0)", mobileMenu.classList.add("show"), menuOpen = !0 } function closeMenu() { mobileMenu.style.transform = "translateY(100%)", mobileMenu.classList.remove("show"), menuOpen = !1 } menuBtn.addEventListener("click", (() => { menuOpen ? closeMenu() : openMenu() })), mobileMenu.querySelectorAll("a").forEach((e => { e.addEventListener("click", (() => { closeMenu() })) })); const header = document.querySelector("header.main"); window.addEventListener("scroll", (() => { window.scrollY > 450 ? header.classList.add("bg-eaeaf3") : header.classList.remove("bg-eaeaf3") })); const fadeGroups = document.querySelectorAll(".fade-group"); fadeGroups.forEach((e => { const t = e.querySelectorAll(".fade-in"); new IntersectionObserver(((n, s) => { n.forEach((n => { n.isIntersecting && (e.classList.add("visible"), t.forEach(((e, t) => { e.style.transitionDelay = .1 * t + "s" })), s.unobserve(n.target)) })) }), { threshold: .2 }).observe(e) }));
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</body>
+
+</html>

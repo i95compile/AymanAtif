@@ -2,852 +2,482 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayman Atif | Full-Stack Web, Desktop & Mobile Developer</title>
-    <link rel="canonical" href="https://aymanzbuilding.github.io/Ayman-Atif/" />
-
-    <meta name="description"
-        content="I’m Ayman Atif, a full-stack developer specializing in web, desktop, and mobile applications. I deliver modern, high-performance, and visually polished projects.">
-
-    <meta property="og:title" content="Ayman Atif | Full-Stack Developer">
-    <meta property="og:description"
-        content="I build high-quality web, desktop, and mobile applications with modern designs and excellent user experience.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aymanzbuilding.github.io/Ayman-Atif/">
-    <meta property="og:image" content="https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ayman Atif | Full-Stack Developer">
-    <meta name="twitter:description"
-        content="I build high-quality web, desktop, and mobile applications with modern designs and excellent UX.">
-    <meta name="twitter:image" content="https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg">
-
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ayman Atif",
-  "url": "https://aymanzbuilding.github.io/Ayman-Atif/",
-  "image": "https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg",
-  "jobTitle": "Full-Stack Developer",
-  "sameAs": [
-    "https://www.linkedin.com/in/a95yman/",
-    "https://github.com/aymanbuilds",
-    "https://wa.me/212688459384"
-  ],
-  "description": "Full-stack developer specializing in web, desktop, and mobile applications. I create high-quality, modern, and functional digital experiences.",
-  "knowsAbout": [
-    "Web Development",
-    "Mobile Development",
-    "Desktop Applications",
-    "SEO",
-    "C#",
-    ".NET",
-    "Python",
-    "JavaScript",
-    "React",
-    "Tailwind CSS",
-    "SQL",
-    "UI/UX Design"
-  ]
-}
-</script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
-        html {
-            scroll-behavior: smooth
-        }
-
-        #mobileMenu.show a,
-        .fade-group.visible .fade-in {
-            opacity: 1;
-            transform: translateY(0)
-        }
-
-        body {
-            font-family: Syne, Arial, sans-serif
-        }
-
-        .title-font {
-            font-family: Poppins, Arial, sans-serif
-        }
-
-        section {
-            scroll-margin-block-start: 80px
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0)
-            }
-
-            50% {
-                transform: translateY(-12px)
-            }
-        }
-
-        .faq-section {
-            background: #fff;
-            padding: 60px 0 80px
-        }
-
-        .faq-wrapper {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 60px;
-            align-items: start
-        }
-
-        .faq-left .faq-label {
-            color: #6b7280;
-            margin-bottom: 10px
-        }
-
-        .faq-left .faq-title {
-            font-weight: 700;
-            font-size: 2.25rem;
-            line-height: 2.5rem;
-            margin-bottom: 20px
-        }
-
-        .faq-btn {
-            padding: 12px 24px;
-            background: #000;
-            color: #fff;
-            border-radius: 50px;
-            border: none
-        }
-
-        .faq-right {
-            display: flex;
-            flex-direction: column;
-            gap: 30px
-        }
-
-        .faq-item {
-            width: 100%
-        }
-
-        .faq-item input {
-            display: none
-        }
-
-        .faq-question {
-            display: block;
-            background: #eaeaf3;
-            padding: 22px;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: 550;
+        .hero-minimal {
             position: relative;
-            transition: background .3s
+            flex-direction: column;
         }
 
-        .faq-question::after {
-            content: "+";
+        .hero-container {
             position: absolute;
-            right: 24px;
-            font-size: 22px;
-            top: 15px;
-            transition: transform .3s
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) !important;
+            background-color: transparent !important;
+            max-width: unset !important;
+            width: 100% !important;
+            grid-template-columns: 100%;
         }
 
-        .faq-item input:checked+.faq-question::after {
-            transform: rotate(45deg)
-        }
-
-        .faq-answer {
-            background: #f6f6ff;
-            margin-top: -18px;
-            padding: 0 22px;
-            border-radius: 0 0 40px 40px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height .35s, padding .3s
-        }
-
-        .faq-item input:checked~.faq-answer {
-            max-height: 300px;
-            padding: 28px 22px 22px
-        }
-
-        @media (max-width:800px) {
-            .faq-wrapper {
-                grid-template-columns: 1fr
-            }
-        }
-
-        header.main {
-            position: sticky;
+        .hero-container-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: top;
+            /* position: absolute; */
+            left: 0;
             top: 0;
-            z-index: 9999999999;
-            transition: background-color .4s, padding .4s
+            filter: brightness(70%);
         }
 
-        .bg-eaeaf3 {
-            background-color: #eaeaf3 !important;
-            padding-top: 10px !important;
-            padding-bottom: 10px !important
+        .hero-minimal {
+            padding: 0 !important;
         }
 
-        #bgName .letter {
-            line-height: 1
+        .hero-text h1,
+        .hero-text p {
+            color: white;
+            text-shadow: rgba(0, 0, 0, 0.4) 0 0 20px;
         }
 
-        #bgName br {
-            display: block;
-            height: 0
+        .healing-right {
+            gap: 10px;
         }
 
-        @media (min-width:1001px) {
-            #bgName {
-                font-size: 20vw !important
+        .card-content p {
+            margin-bottom: 6px !important;
+        }
+
+        @media (max-width:750px) {
+            .hero-container {
+                position: relative;
+                top: 0;
+                transform: none !important;
+                padding: 20px !important;
+            }
+
+            .hero-container-img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100% !important;
             }
         }
 
-        @media (max-width:1000px) {
-            #bgName {
-                font-size: 22vw !important
+        @media (max-width:550px) {
+            .hero-text {
+                padding: 0;
             }
-        }
-
-        #mobileMenu a {
-            transform: translateY(50px);
-            opacity: 0;
-            transition: transform .5s, opacity .5s
-        }
-
-        #mobileMenu.show a:first-child {
-            transition-delay: 0.1s
-        }
-
-        #mobileMenu.show a:nth-child(2) {
-            transition-delay: 0.2s
-        }
-
-        #mobileMenu.show a:nth-child(3) {
-            transition-delay: 0.3s
-        }
-
-        #mobileMenu.show a:nth-child(4) {
-            transition-delay: 0.4s
-        }
-
-        #mobileMenu.show a:nth-child(5) {
-            transition-delay: 0.5s
-        }
-
-        #mobileMenu.show a:nth-child(6) {
-            transition-delay: 0.6s
-        }
-
-        #mobileMenu:not(.show) a {
-            transition-delay: 0s !important
-        }
-
-        @media (max-width:768px) {
-            #contact {
-                padding-bottom: 0
-            }
-
-            footer {
-                padding-top: 40px
-            }
-
-            .title-font,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-size: 1.7rem !important;
-                line-height: 1.1rem
-            }
-        }
-
-        .fade-group .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity .3s ease-out, transform .3s ease-out
-        }
-
-        #home {
-            scroll-margin-block-start: 280px
         }
     </style>
 </head>
 
-<body class="bg-[#eaeaf3]">
+<body>
+    <header class="main main-header">
+        <a href="index.html">
+            <img class="logo" width="160" src="assets/images/logo.png" alt="Logo">
+        </a>
 
-    <!-- HEADER -->
-    <header class="main w-full py-6 fixed top-0 left-0 z-50 bg-transparent">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center relative">
+        <nav class="site-navigation">
+            <ul class="nav-list">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="vision-and-mission-statement.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="theracounselers-and-licensed-clinical-social-workers.html"
+                        class="nav-link">Mental Health Specialists</a></li>
+                <!-- <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">Benefits</a>
+                    <ul class="submenu">
+                        <li><a href="make-the-call.html" class="submenu-link">A Place of Healing</a></li>
+                        <li><a href="prevention.html" class="submenu-link">Prevention</a></li>
+                        <li><a href="request-benefits.html" class="submenu-link">Request Benefits</a></li>
+                        <li><a href="guidance-support.html" class="submenu-link">Guidance & Support</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">More</a>
+                    <ul class="submenu">
+                        <li><a href="additional-resources.html" class="submenu-link">Additional Resources</a></li>
+                        <li><a href="mental-health-links.html" class="submenu-link">Mental Health Links</a></li>
+                        <li><a href="career-opportunities.html" class="submenu-link">Career Opportunities</a></li>
+                        <li><a href="faq.html" class="submenu-link">FAQ</a></li>
+                        <li><a href="privacy-policy.html" class="submenu-link">Privacy Policy</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="blogs.html" class="nav-link">Blog</a></li> -->
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="active-circle"></div>
+        </nav>
 
-            <!-- LOGO / LEFT NAV (hidden on mobile) -->
-            <div class="bg-black py-3 px-6 rounded-full hidden md:flex">
-                <nav class="flex items-center gap-8 text-white font-semibold">
-                    <a href="#home" class="hover:text-gray-300 transition">Home</a>
-                    <a href="#services" class="hover:text-gray-300 transition">Services</a>
-                    <a href="#about" class="hover:text-gray-300 transition">About</a>
-                    <a href="#work" class="hover:text-gray-300 transition">UI Showcase</a>
-                    <a href="#testimonials" class="hover:text-gray-300 transition">Testimonials</a>
-                </nav>
-            </div>
+        <button id="open-menu" class="btn primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
 
-            <!-- HIRE ME BUTTON (hidden on mobile) -->
-            <a href="#contact"
-                class="hidden md:flex items-center gap-3 bg-white text-black p-1.5 pr-4 rounded-full shadow-md transition duration-300 hover:bg-gray-100 hover:scale-105 hover:shadow-xl">
-                <div
-                    class="w-10 h-10 flex items-center justify-center bg-black text-white rounded-full transition duration-300 hover:bg-white hover:text-black">
-                    <i class="bi bi-arrow-up-right"></i>
-                </div>
-                Hire Me
-            </a>
+        <button id="close-menu" class="btn primary" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
+                viewBox="0 0 16 16">
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </button>
 
-            <!-- MENU BUTTON (mobile only) -->
-            <button id="menuBtn" class="md:hidden text-black p-2 rounded-md focus:outline-none z-50"
-                aria-label="Open menu">
-                <i class="bi bi-list text-3xl"></i>
-            </button>
-
-        </div>
-
-        <!-- MOBILE MENU -->
-        <div id="mobileMenu"
-            class="fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center space-y-6 text-white text-2xl transform translate-y-full transition-transform duration-500 ease-in-out">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#work">UI Showcase</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Hire Me</a>
-        </div>
+        <!-- <a href="request-benefits.html" class="btn primary"> -->
+        <a href="#" class="btn primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone"
+                viewBox="0 0 16 16">
+                <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg>
+            <span>Get In Touch</span>
+        </a>
     </header>
 
     <main>
-        <section id="home" class="relative max-w-7xl mx-auto px-6 mt-24 text-center">
+        <section class="hero-minimal">
+            <img class="hero-container-img" src="assets/images/Firefly_Gemini Flash.png" alt="Hero Image">
+            <div class="hero-container reveal-up">
+                <div class="hero-col hero-text">
+                    <h1 class="reveal-up">
+                        TheraCounsel — Your Trusted Mental Health Specialists For Over 25 Years
+                    </h1>
 
-            <!-- BACKGROUND NAME -->
-            <div id="bgName" class="absolute inset-0 flex items-center justify-center pointer-events-none select-none
-               font-extrabold text-gray-400 opacity-20 tracking-tight title-font">
-                AYMAN
-            </div>
-
-            <!-- FOREGROUND HERO CONTENT -->
-            <div class="relative z-10">
-                <h1 class="title-font text-5xl md:text-6xl font-extrabold text-black leading-tight">
-                    Creative Developer<br />Crafting Modern Experiences
-                </h1>
-
-                <p class="mt-6 text-lg text-gray-700 max-w-xl mx-auto">
-                    I build visually polished and highly functional websites that blend performance, clarity, and great
-                    user
-                    experience.
-                </p>
-
-                <div class="flex justify-center">
-                    <a href="#services"
-                        class="mt-8 block w-auto self-center bg-black text-white px-10 py-3 rounded-full shadow-md transition hover:bg-gray-800 hover:scale-105">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="max-w-7xl mx-auto px-6 mt-32 pb-8">
-            <!-- TITLE + SUBTITLE -->
-            <div class="mb-16 fade-group">
-                <h2 class="fade-in text-4xl md:text-5xl font-extrabold text-left text-black title-font">My Services</h2>
-                <p class="fade-in mt-4 text-gray-700 max-w-xl ml-8">
-                    I provide a wide range of services, from web and mobile development to desktop solutions and SEO
-                    optimization.
-                </p>
-            </div>
-
-            <!-- FIRST ROW -->
-            <div class="flex flex-col md:flex-row gap-8 mb-8 fade-group">
-                <!-- CARD 1 (40%, white, left-aligned) -->
-                <div class="fade-in bg-white rounded-2xl p-8 flex flex-col justify-between w-full md:w-[40%]">
-                    <p class="text-gray-600 mb-8">Custom websites crafted with performance, accessibility, and
-                        scalability
-                        in mind. Great for startups and enterprises alike.</p>
-                    <div class="flex flex-wrap justify-between items-center">
-                        <h3 class="text-2xl font-bold">Web Development</h3>
-                        <span class="text-3xl font-extrabold text-gray-800">01</span>
-                    </div>
-                </div>
-
-                <!-- CARD 2 (60%, gradient, reversed content) -->
-                <div class="fade-in bg-gradient-to-br from-violet-500 to-purple-700 text-white rounded-2xl p-8 flex flex-col-reverse justify-between w-full md:w-[60%]"
-                    style="clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0% 100%);">
-                    <div class="flex flex-wrap justify-between items-center md:flex-row-reverse">
-                        <h3 class="text-2xl font-bold">Desktop Applications</h3>
-                        <span class="text-3xl font-extrabold">02</span>
-                    </div>
-                    <p class="mb-8">Robust desktop apps for productivity, finance, and enterprise solutions, tailored to
-                        your needs.</p>
-                </div>
-            </div>
-
-            <!-- SECOND ROW -->
-            <div class="flex flex-col md:flex-row gap-8 fade-group">
-                <!-- CARD 3 (60%, gradient) -->
-                <div
-                    class="fade-in bg-gradient-to-br from-violet-500 to-purple-700 text-white rounded-2xl p-8 flex flex-col justify-between w-full md:w-[60%]">
-                    <p class="mb-8">Creating intuitive mobile applications for iOS and Android with great UX, smooth
-                        animations, and high performance.</p>
-                    <div class="flex flex-wrap justify-between items-center">
-                        <h3 class="text-2xl font-bold">Mobile Development</h3>
-                        <span class="text-3xl font-extrabold">03</span>
-                    </div>
-                </div>
-
-                <!-- CARD 4 (40%, white, reversed content) -->
-                <div class="fade-in bg-white rounded-2xl p-8 flex flex-col-reverse justify-between w-full md:w-[40%]"
-                    style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%);">
-                    <div class="flex flex-wrap justify-between items-center md:flex-row-reverse">
-                        <h3 class="text-2xl font-bold">Support & SEO</h3>
-                        <span class="text-3xl font-extrabold text-gray-800">04</span>
-                    </div>
-                    <p class="text-gray-600 mb-4">Ongoing support, website optimization, and SEO strategies for
-                        continuous
-                        growth and visibility.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="relative max-w-7xl mx-auto rounded-3xl bg-white px-6 py-24 overflow-hidden">
-
-            <!-- WATERMARK NAME -->
-            <div class="absolute inset-0 flex justify-center items-center pointer-events-none select-none">
-                <h1
-                    class="text-[150px] md:text-[200px] font-extrabold text-gray-300 opacity-20 transform -rotate-12 tracking-tight">
-                    AYMAN ATIF
-                </h1>
-            </div>
-
-            <!-- CONTENT OVER WATERMARK -->
-            <div class="relative z-10">
-
-                <!-- ABOUT TOP SECTION -->
-                <div class="relative z-10 mb-16 px-4 sm:px-6 md:px-16">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 items-center fade-group">
-
-                        <!-- LEFT : TITLE + DESCRIPTION -->
-                        <div class="text-center md:text-left">
-                            <h2 class="fade-in text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 title-font">
-                                About Me
-                            </h2>
-                            <p
-                                class="fade-in mt-6 text-base sm:text-lg md:text-xl text-gray-700 max-w-xl mx-auto md:mx-0">
-                                I’m Ayman Atif, a full-stack developer with expertise in web, desktop, and mobile
-                                applications.
-                                I combine creativity with functionality to deliver polished, high-performance projects.
-                                Over the years, I’ve tackled dozens of projects, always prioritizing clean code,
-                                scalability,
-                                and excellent user experience. I enjoy learning new technologies, optimizing workflows,
-                                and building solutions that help businesses grow.
-                            </p>
-                        </div>
-
-                        <!-- RIGHT : FLOATING IMAGE -->
-                        <div class="flex justify-center md:justify-end mt-10 md:mt-0 fade-in">
-                            <div class="relative w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 
-                  animate-[float_5s_ease-in-out_infinite]">
-                                <img src="assets/images/ayman-atif.jpeg" alt="Ayman Atif, web developer"
-                                    class="w-full h-full object-cover rounded-full shadow-2xl transition-all duration-700 hover:scale-105 hover:-rotate-2" />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- SKILLS GRID -->
-                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 fade-group">
-
-                    <!-- FRONTEND -->
-                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center relative"
-                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
-                        <h3 class="font-bold text-lg mb-2">HTML</h3>
-                        <p class="text-white text-sm">Semantic Markup & Accessibility</p>
-                    </div>
-
-                    <div
-                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
-                        <h3 class="font-bold text-lg mb-2">CSS / Tailwind</h3>
-                        <p class="text-gray-700 text-sm">Responsive Layouts & Design</p>
-                    </div>
-
-                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
-                        style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);">
-                        <h3 class="font-bold text-lg mb-2">JavaScript</h3>
-                        <p class="text-white text-sm">ES6+, React & Frontend Logic</p>
-                    </div>
-
-                    <div
-                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
-                        <h3 class="font-bold text-lg mb-2">Frontend Architecture</h3>
-                        <p class="text-gray-700 text-sm">Components & State Management</p>
-                    </div>
-
-                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
-                        style="clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);">
-                        <h3 class="font-bold text-lg mb-2">UI / UX</h3>
-                        <p class="text-white text-sm">User-Centered Design</p>
-                    </div>
-
-                    <div
-                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
-                        <h3 class="font-bold text-lg mb-2">API Design</h3>
-                        <p class="text-gray-700 text-sm">RESTful & JSON APIs</p>
-                    </div>
-
-                    <!-- BACKEND -->
-                    <div
-                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
-                        <h3 class="font-bold text-lg mb-2">C# / .NET</h3>
-                        <p class="text-white text-sm">Backend Services & APIs</p>
-                    </div>
-
-                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
-                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
-                        <h3 class="font-bold text-lg mb-2">Python</h3>
-                        <p class="text-gray-700 text-sm">Backend Scripting & Automation</p>
-                    </div>
-
-                    <div
-                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
-                        <h3 class="font-bold text-lg mb-2">Java</h3>
-                        <p class="text-white text-sm">Backend Services & Android Apps</p>
-                    </div>
-
-                    <!-- DATABASES -->
-                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
-                        style="clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);">
-                        <h3 class="font-bold text-lg mb-2">SQL / MySQL</h3>
-                        <p class="text-gray-700 text-sm">Data Modeling & Queries</p>
-                    </div>
-
-                    <div
-                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
-                        <h3 class="font-bold text-lg mb-2">PostgreSQL</h3>
-                        <p class="text-white text-sm">Relational Database Management</p>
-                    </div>
-
-                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
-                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
-                        <h3 class="font-bold text-lg mb-2">Mobile Development</h3>
-                        <p class="text-gray-700 text-sm">iOS & Android Apps</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section id="work" class="w-full bg-neutral-900 text-white py-24 mt-8 fade-group">
-            <div class="max-w-3xl mx-auto text-center px-6">
-                <h2 class="fade-in text-5xl font-bold tracking-tight mb-6">UI Showcase</h2>
-                <p class="fade-in text-gray-400 text-lg leading-relaxed">
-                    A curated selection of interface templates and UI experiments, demonstrating clean design,
-                    thoughtful layouts,
-                    and smooth motion. Each example reflects my approach to building polished, high-quality user
-                    interfaces
-                    that balance aesthetics and usability.
-                </p>
-            </div>
-
-            <!-- PROJECT CONTAINER -->
-            <div class="max-w-6xl mx-auto mt-24 px-6 relative fade-in">
-
-                <!-- Floating UI Screens Wrapper -->
-                <div class="relative h-[600px] md:h-[700px] lg:h-[800px]">
-
-                    <!-- UI Screens -->
-                    <img src="assets/images/luxedwell-1.jpg" alt="UI Example 1: Modern interior layout"
-                        class="absolute w-48 md:w-64 lg:w-72 rounded-2xl shadow-2xl top-0 left-3 md:left-12 rotate-[2deg] hover:scale-105 transition-all" />
-
-                    <img src="assets/images/luxedwell-2.jpg" alt="UI Example 2: Clean interface layout"
-                        class="absolute w-40 md:w-56 lg:w-64 rounded-2xl shadow-2xl top-32 right-5 md:right-20 rotate-[-3deg] hover:scale-105 transition-all" />
-
-                    <img src="assets/images/luxedwell-3.jpg" alt="UI Example 3: Card-based interface design"
-                        class="absolute w-48 md:w-64 lg:w-72 rounded-2xl shadow-2xl bottom-10 left-10 rotate-[4deg] hover:scale-105 transition-all" />
-
-                    <img src="assets/images/luxedwell-4.jpg" alt="UI Example 4: Interactive layout demo"
-                        class="absolute w-40 md:w-56 lg:w-64 rounded-2xl shadow-2xl bottom-0 right-12 rotate-[5deg] hover:scale-105 transition-all" />
-
-                    <img src="assets/images/luxedwell-5.jpg" alt="UI Example 5: Central hero screen"
-                        class="absolute w-56 md:w-72 lg:w-80 rounded-3xl shadow-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-1deg] hover:scale-105 transition-all z-20" />
-
-                </div>
-
-                <!-- UI Text + CTA -->
-                <div class="mt-20 text-center max-w-3xl mx-auto">
-                    <h3 class="text-4xl font-bold mb-4 tracking-tight fade-in">LuxeDwell UI Template</h3>
-                    <p class="text-gray-300 leading-relaxed mb-8 fade-in">
-                        A clean, modern interface template showcasing elegant layouts, interactive elements,
-                        and visually pleasing hierarchy. Perfect for demonstrating UI design proficiency
-                        and front-end craftsmanship.
-                    </p>
-
-                    <a href="https://aymanbuilds.github.io/LuxeDwell/" target="_blank" class="fade-in inline-flex items-center gap-3 bg-white text-black px-7 py-3 rounded-full
-                hover:bg-neutral-200 transition-all shadow-lg">
-                        <span>Preview UI</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="testimonials" class="py-24 fade-group">
-            <div class="max-w-7xl mx-auto px-6">
-
-                <!-- Section Title + Description -->
-                <div class="text-center mb-16">
-                    <h2 class="fade-in text-5xl font-extrabold mb-6 title-font">Testimonials</h2>
-                    <p class="fade-in mt-6 text-lg text-gray-700 max-w-xl mx-auto">
-                        Hear from clients who have trusted me with their projects and loved the results.
+                    <p class="reveal-up">
+                        Your journey to emotional and mental well-being
+                        starts here. At TheraCounsel, we are committed
+                        to helping you overcome life's challenges and
+                        guiding you toward a healthier, more fulfilling life.
                     </p>
                 </div>
 
-                <!-- Testimonials Grid -->
-                <div class="fade-in grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                    <!-- Testimonial Card 1 -->
-                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[2deg]">
-                        <p class="text-gray-800 mb-4">
-                            "Ayman built a desktop app for our e-commerce store. It works perfectly, and we continue
-                            collaborating for ongoing support."
-                        </p>
-                        <h3 class="font-bold">Simon</h3>
-                    </div>
-
-                    <!-- Testimonial Card 2 -->
-                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[1deg]">
-                        <p class="text-gray-800 mb-4">
-                            "Ayman developed two Odoo modules for our business, fully compliant with UK trading
-                            regulations. Excellent results!"
-                        </p>
-                        <h3 class="font-bold">Naseem</h3>
-                    </div>
-
-                    <!-- Testimonial Card 3 -->
-                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[1deg]">
-                        <p class="text-gray-800 mb-4">
-                            "He created a mobile app for our restaurant. We were thrilled with the results and continue
-                            receiving SEO support."
-                        </p>
-                        <h3 class="font-bold">Omar</h3>
-                    </div>
-
-                    <!-- Testimonial Card 4 -->
-                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[2deg]">
-                        <p class="text-gray-800 mb-4">
-                            "Ayman helped our startup develop an AI-driven news solution MVP. It worked flawlessly and
-                            met all our expectations."
-                        </p>
-                        <h3 class="font-bold">Veelio</h3>
-                    </div>
-
-                    <!-- Testimonial Card 5 -->
-                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[1.5deg]">
-                        <p class="text-gray-800 mb-4">
-                            "He built an AI solution for our printing service. We were very satisfied with the quality
-                            and delivery."
-                        </p>
-                        <h3 class="font-bold">Daan</h3>
-                    </div>
-
-                    <!-- Testimonial Card 6 -->
-                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[1.5deg]">
-                        <p class="text-gray-800 mb-4">
-                            "Ayman created our website and handled SEO for our finance business. Exceptional work and
-                            very satisfied!"
-                        </p>
-                        <h3 class="font-bold">Susan</h3>
-                    </div>
-
-                </div>
+                <!-- <div class="hero-col hero-image">
+                    <img src="assets/images/Firefly_Gemini Flash.png" alt="TheraCounsel Team">
+                </div> -->
             </div>
         </section>
 
-        <section class="faq-section">
-            <div class="faq-wrapper">
+        <section class="section-healing-clean">
+
+            <div class="healing-grid">
 
                 <!-- LEFT COLUMN -->
-                <div class="faq-left">
-                    <p class="mt-6 text-lg text-gray-700 max-w-xl mx-auto">
-                        Common Questions
-                    </p>
-                    <h2 class="text-5xl font-extrabold title-font">My FAQ</h2>
+                <div class="healing-left">
+                    <h2 class="reveal-up">TheraCounsel,<br>Your Path to Emotional Healing</h2>
 
-                    <div class="flex">
-                        <a href="#contact"
-                            class="block w-auto self-start mt-10 flex items-center gap-3 bg-transparent border-2 border-neutral-900 text-neutral-900 p-1.5 pr-3.5 rounded-full shadow-md transition-all duration-300 hover:bg-neutral-900 hover:text-white hover:scale-105 hover:shadow-xl">
-                            <div
-                                class="w-10 h-10 flex items-center justify-center bg-white text-neutral-900 rounded-full transition-all duration-300 hover:bg-neutral-900 hover:text-white">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </div>
-                            Contact Me
-                        </a>
-                    </div>
+                    <p class="reveal-up tagline">Because You Matter:<br>Personalized Mental Health Care and Support
+                    </p>
+
+                    <p class="reveal-up">
+                        At TheraCounsel, we provide compassionate, professional mental health services
+                        tailored to your unique needs. Our team of licensed clinicians, including Licensed
+                        Clinical Social Workers (LCSWs) and Psychiatric Mental Health Nurse Practitioners
+                        (PMHNP), is dedicated to offering a safe, supportive environment where healing and
+                        growth are our priorities.
+                    </p>
                 </div>
 
                 <!-- RIGHT COLUMN -->
-                <div class="faq-right">
+                <div class="healing-right">
 
-                    <!-- FAQ 1 -->
-                    <div class="faq-item">
-                        <input type="checkbox" id="faq1">
-                        <label class="faq-question" for="faq1">What services do you offer?</label>
-                        <div class="faq-answer">
-                            I provide end-to-end development solutions including web, desktop, and mobile applications,
-                            as well as ongoing support, SEO, and optimization.
+                    <div class="main-card reveal-up">
+                        <div class="card-icon">
+                            <div class="icon-circle"></div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Who We Are</h3>
+
+                            <p>
+                                Psychotherapists and Psychiatric Mental Health
+                                Nurse Practitioners (PMHNPs) with a passion to
+                                make a difference in the lives of others.
+                            </p>
+
+                            <p>
+                                Specialists in treating depression, anxiety, grief,
+                                loss, trauma, and everyday life challenges.
+                            </p>
+
+                            <p>
+                                Clinicians who meet with you in the comfort of
+                                your home via telehealth or in-person sessions.
+                            </p>
                         </div>
                     </div>
 
-                    <!-- FAQ 2 -->
-                    <div class="faq-item">
-                        <input type="checkbox" id="faq2">
-                        <label class="faq-question" for="faq2">How do you price your projects?</label>
-                        <div class="faq-answer">
-                            Pricing depends on the project’s complexity and scope. I provide detailed quotes after
-                            understanding your requirements and goals.
+                    <div class="main-card reveal-up">
+                        <div class="card-icon">
+                            <div class="icon-circle"></div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>What We Do</h3>
+
+                            <p>
+                                Unique and individualized treatment planning with
+                                measurable and realistic treatment goals and objectives.
+                            </p>
                         </div>
                     </div>
 
-                    <!-- FAQ 3 -->
-                    <div class="faq-item">
-                        <input type="checkbox" id="faq3">
-                        <label class="faq-question" for="faq3">What is your typical project timeline?</label>
-                        <div class="faq-answer">
-                            Timelines vary based on the type and size of the project. Smaller projects can take a few
-                            weeks, while larger solutions may take several months. I always provide a clear schedule
-                            upfront.
+                    <div class="main-card reveal-up">
+                        <div class="card-icon">
+                            <div class="icon-circle"></div>
+                        </div>
+
+                        <div class="card-content">
+                            <h3>Mental Health Assessment</h3>
+
+                            <p>One-to-one needs assessments with history taking and
+                                evidence-based evaluation tools.</p>
+
+                            <p>Establishing baseline and desired treatment results</p>
                         </div>
                     </div>
 
-                    <!-- FAQ 4 -->
-                    <div class="faq-item">
-                        <input type="checkbox" id="faq4">
-                        <label class="faq-question" for="faq4">Do you offer post-launch support?</label>
-                        <div class="faq-answer">
-                            Yes, I offer maintenance, bug fixes, and ongoing support to ensure your application runs
-                            smoothly and stays up to date.
+                    <div class="main-card reveal-up">
+                        <div class="card-icon">
+                            <div class="icon-circle"></div>
                         </div>
-                    </div>
 
-                    <!-- FAQ 5 -->
-                    <div class="faq-item">
-                        <input type="checkbox" id="faq5">
-                        <label class="faq-question" for="faq5">Which technologies do you specialize in?</label>
-                        <div class="faq-answer">
-                            I specialize in full-stack development using C#, .NET, Python, JavaScript, React, Tailwind
-                            CSS, SQL/NoSQL databases, and mobile development for iOS and Android.
+                        <div class="card-content">
+                            <h3>Personal Growth and Well-being</h3>
+
+                            <p>
+                                Adopt new ways of thinking and behaving, cultivate
+                                healthier relationships, develop creative personal solutions,
+                                enhance life satisfaction, and live a more wholehearted life.
+                            </p>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="bg-neutral-900 text-white py-24">
-            <div class="max-w-6xl mx-auto px-6">
-
-                <h2 class="text-5xl font-extrabold mb-6 title-font text-center">
-                    Let's Make Something<br>Amazing Together
-                </h2>
-
-                <div class="flex flex-col md:flex-row md:divide-x md:divide-neutral-700 text-center mt-16">
-
-                    <!-- Item -->
-                    <div class="flex-1 px-8 py-10">
-                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Whatsapp</h3>
-                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
-                            <a href="https://wa.me/212688459384?text=Hi!" target="_blank">+212 688-459384</a>
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="flex-1 px-8 py-10">
-                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Email Address</h3>
-                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
-                            <a href="mailto:a95yman@gmail.com" target="_blank">a95yman@gmail.com</a>
-                        </p>
-                    </div>
-
-                    <!-- Item -->
-                    <div class="flex-1 px-8 py-10">
-                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Linkedin</h3>
-                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
-                            <a href="https://www.linkedin.com/in/a95yman/">@a95yman</a>
-                        </p>
                     </div>
 
                 </div>
 
             </div>
+
         </section>
 
-        <footer class="bg-neutral-900 text-white pb-20">
-            <div class="max-w-6xl mx-auto px-6">
+        <section class="team-section">
 
-                <!-- Menu -->
-                <nav class="flex flex-wrap justify-center gap-8 text-sm mb-14 text-neutral-300">
-                    <a href="#home" class="hover:text-gray-300 transition">Home</a>
-                    <a href="#services" class="hover:text-gray-300 transition">Services</a>
-                    <a href="#about" class="hover:text-gray-300 transition">About</a>
-                    <a href="#work" class="hover:text-gray-300 transition">UI Showcase</a>
-                    <a href="#testimonials" class="hover:text-gray-300 transition">Testimonials</a>
-                </nav>
+            <!-- Intro -->
+            <div class="team-intro">
+                <h2 class="reveal-up">Start Your Journey to Healing and Self-Discovery</h2>
+                <p class="reveal-up">
+                    At TheraCounsel, we support clients in improving their wellbeing while
+                    reducing unnecessary healthcare costs. Depression can manifest as
+                    various physical issues, often leading to misdiagnosis and avoidable
+                    treatments. Our licensed professionals serve Broward, Palm Beach, and
+                    Miami, and are in-network with major insurance providers.
+                </p>
+            </div>
 
-                <!-- Main Footer CTA -->
-                <div class="text-center max-w-2xl mx-auto">
-                    <h3 class="text-3xl font-semibold mb-4">
-                        Your Ideas, My Code, Amazing Results.
-                    </h3>
-                    <p class="text-neutral-300 text-lg leading-relaxed mb-8">
-                        I specialize in web, desktop, and mobile applications, delivering modern, high-quality
-                        solutions. Let’s collaborate to turn your ideas into reality.
+            <!-- Gradient Container -->
+            <div class="team-wrapper">
+                <div class="team-cards">
+
+                    <div class="team-card reveal-up">
+                        <img src="assets/images/doctor2.webp" alt="">
+                    </div>
+
+                    <div class="team-card reveal-up">
+                        <img src="assets/images/tracy.jpeg" alt="">
+                    </div>
+
+                    <div class="team-card reveal-up">
+                        <img src="assets/images/karen.png" alt="">
+                    </div>
+
+                    <div class="team-card reveal-up">
+                        <img src="assets/images/natalie.png" alt="">
+                    </div>
+
+                </div>
+
+                <!-- See More Button -->
+                <div class="see-more-btn reveal-up">
+                    <!-- <a href="guidance-support.html" class="btn light"> -->
+                    <a href="#" class="btn light">
+                        <span>See More</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="speciality" class="speciality-section">
+            <div class="speciality-grid">
+
+                <!-- Left Column (Image full height/width) -->
+                <div class="speciality-image reveal-up">
+                    <img src="assets/images/therapy.webp" alt="Image">
+                </div>
+
+                <!-- Right Column -->
+                <div class="speciality-content">
+
+                    <h2 class="reveal-up">What Can TheraCounsel<br>Do for You?</h2>
+
+                    <p class="tagline reveal-up">
+                        Because You Matter:<br>
+                        Personalized Mental Health Care and Support
                     </p>
 
+                    <p class="desc reveal-up">
+                        “At TheraCounsel, we specialize in helping you navigate through
+                        life's challenges. Explore therapy benefits and how it can support
+                        your emotional well-being.”
+                    </p>
+
+                    <ul class="speciality-list reveal-up">
+                        <li>Adopt new ways of thinking and behaving</li>
+                        <li>Become more of who you were meant to be</li>
+                        <li>Collaborate with a Psychiatric Mental Health Nurse Practitioner
+                            and/or Psychotherapist</li>
+                        <li>Develop new strategies to deal with life stressors</li>
+                        <li>Engage more meaningfully in everyday life</li>
+                        <li>Find peace and balance within</li>
+                        <li>Gain insights into root causes and solutions</li>
+                        <li>Heighten sense of love, toward self and others</li>
+                        <li>Increase sense of self mastery, self-worth</li>
+                        <li>Join a growing number of more self-actualized, happier people</li>
+                    </ul>
+
                     <div class="flex">
-                        <a href="https://wa.me/212688459384?text=Hi!" target="_blank"
-                            class="w-auto self-center mt-6 flex items-center gap-3 bg-neutral-900 text-white p-1.5 pr-3.5 rounded-full shadow hover:bg-neutral-800 transition mx-auto border border-neutral-700">
-                            <div
-                                class="w-10 h-10 flex items-center justify-center bg-white text-neutral-900 rounded-full">
-                                <i class="bi bi-arrow-up-right"></i>
-                            </div>
-                            Contact Us
+                        <!-- <a href="vision-and-mission-statement.html" class="btn primary reveal-up"> -->
+                        <a href="#" class="btn primary reveal-up">
+                            FIND OUT MORE
                         </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="faq" class="section-emotional-healing">
+            <div class="top">
+                <div class="title reveal-up">
+                    <h2>What is Psychotherapy and How Can It Help?</h2>
+                </div>
+                <div class="content reveal-up">
+                    <p>
+                        Psychotherapy is a vital tool for those looking to improve their mental health. Whether you're
+                        dealing with anxiety, relationship issues, or life transitions, therapy can help you gain
+                        insights and develop strategies to cope.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-list reveal-up">
+
+                <div class="faq-item active">
+                    <button class="faq-btn">
+                        <span>What is TheraCounsel?</span>
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-panel">
+                        TheraCounsel is a team of compassionate psychotherapists and Psychiatric Mental Health Nurse
+                        Practitioners (PMHNPs) providing care through telehealth and in-person sessions.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span>Why is psychotherapy important?</span>
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-panel">
+                        Psychotherapy helps you understand your emotions, reduce distress, improve coping, and navigate
+                        life transitions with clarity and support.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span>What happens during a psychotherapy session?</span>
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-panel">
+                        Sessions involve open discussions about your thoughts, behaviors, and emotions. You work with
+                        your clinician to understand patterns and adopt healthier responses.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span>What can I expect in the first appointment?</span>
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-panel">
+                        Your clinician will gather your background, identify your goals, and determine an approach
+                        tailored to your needs.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">
+                        <span>What can psychotherapy help with?</span>
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <div class="faq-panel">
+                        <ul>
+                            <li>Stress, anxiety, and emotional overwhelm</li>
+                            <li>Depression and low motivation</li>
+                            <li>Relationship or family conflicts</li>
+                            <li>Trauma, loss, or major life changes</li>
+                            <li>Chronic illness or health-related stress</li>
+                            <li>Sleep and emotional regulation issues</li>
+                        </ul>
                     </div>
                 </div>
 
             </div>
-        </footer>
+        </section>
     </main>
 
-    <script>
-        const bgName = document.getElementById("bgName"), rawText = bgName.textContent || "", words = rawText.trim().split(/\s+/), html = words.map((e => Array.from(e).map((e => `<span class="letter">${e}</span>`)).join(""))).join("<br>"); bgName.innerHTML = html; const letters = bgName.querySelectorAll(".letter"); let scrollTimeout; letters.forEach((e => { e.style.display = "inline-block", e.style.transition = "transform 0.45s cubic-bezier(.22,.9,.31,1), filter 0.45s ease", e.style.willChange = "transform, filter" })), window.addEventListener("scroll", (() => { const e = window.scrollY; letters.forEach(((t, n) => { let s = t, l = 0; for (; s.previousSibling;)s = s.previousSibling, "BR" === s.nodeName && l++; const r = .02 * l + n % 30 * .06, o = e * (.18 + .06 * l + n % 30 * .012) + 200, a = Math.min(e / (30 + n % 20), 10); 0 === e ? letters.forEach(((e, t) => { const n = .06 * t; e.style.transitionDelay = `${n}s`, e.style.transform = "translateY(0px)", e.style.filter = "blur(0px)" })) : (t.style.transitionDelay = `${r}s`, t.style.transform = `translateY(${o}px)`, t.style.filter = `blur(${a}px)`) })), clearTimeout(scrollTimeout), scrollTimeout = setTimeout((() => { letters.forEach((e => { e.style.filter = "blur(0px)", e.style.transitionDelay = "0s" })) }), 120) })); const menuBtn = document.getElementById("menuBtn"), mobileMenu = document.getElementById("mobileMenu"); let menuOpen = !1; function openMenu() { mobileMenu.style.transform = "translateY(0)", mobileMenu.classList.add("show"), menuOpen = !0 } function closeMenu() { mobileMenu.style.transform = "translateY(100%)", mobileMenu.classList.remove("show"), menuOpen = !1 } menuBtn.addEventListener("click", (() => { menuOpen ? closeMenu() : openMenu() })), mobileMenu.querySelectorAll("a").forEach((e => { e.addEventListener("click", (() => { closeMenu() })) })); const header = document.querySelector("header.main"); window.addEventListener("scroll", (() => { window.scrollY > 450 ? header.classList.add("bg-eaeaf3") : header.classList.remove("bg-eaeaf3") })); const fadeGroups = document.querySelectorAll(".fade-group"); fadeGroups.forEach((e => { const t = e.querySelectorAll(".fade-in"); new IntersectionObserver(((n, s) => { n.forEach((n => { n.isIntersecting && (e.classList.add("visible"), t.forEach(((e, t) => { e.style.transitionDelay = .1 * t + "s" })), s.unobserve(n.target)) })) }), { threshold: .2 }).observe(e) }));
-    </script>
+    <footer class="main-footer reveal-group">
+        <div class="inner">
+            <img class="reveal-up" width="180" src="assets/images/theracounsel.png" alt="Logo">
+            <p class="main reveal-up">
+                “TheraCounsel has been a pillar of Fort Lauderdale's mental health community for over 20 years. We
+                provide a safe place for mental health betterment and healing, and we do it by looking inward to
+                identify unseen roadblocks. We offer psychotherapy, mental health counseling and medication management
+                for all mental health needs, including anxiety, depression, child therapy, couples counseling, and sex
+                therapy.”
+            </p>
+            <div class="row-container">
+                <div class="col">
+                    <div class="row reveal-up">
+                        <p><strong>Call Us Now at</strong> <a href="tel:+19547166514">954-716-6514</a></p>
+                    </div>
+                    <div class="row reveal-up">
+                        <p><strong>Our Facebook Page</strong> <a href="https://www.facebook.com/TheraCounsel"
+                                target="_blank">@TheraCounsel</a></p>
+                    </div>
+                </div>
+                <!-- <a href="request-benefits.html" class="btn primary reveal-up"> -->
+                <a href="#" class="btn primary reveal-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
+    <script src="script/common.js"></script>
 </body>
 
 </html>

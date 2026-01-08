@@ -4,892 +4,849 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayman Atif | Full-Stack Web, Desktop & Mobile Developer</title>
+    <link rel="canonical" href="https://aymanzbuilding.github.io/Ayman-Atif/" />
 
-    <title>Ayman - SEO & Web Optimization</title>
-
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Ayman - SEO & Web Optimization">
     <meta name="description"
-        content="Ayman helps businesses increase organic traffic with technical SEO, clean architecture, and intent-driven optimization. Free SEO audits available.">
-    <meta name="keywords"
-        content="SEO, Technical SEO, Content SEO, SEO Audit, SEO Consultant, Organic Traffic, Web Optimization, On-Page SEO, SEO Strategy">
+        content="I’m Ayman Atif, a full-stack developer specializing in web, desktop, and mobile applications. I deliver modern, high-performance, and visually polished projects.">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://i95compile.github.io/AymanAtif/SEO-Expert">
-    <meta property="og:title" content="Ayman - SEO & Web Optimization">
+    <meta property="og:title" content="Ayman Atif | Full-Stack Developer">
     <meta property="og:description"
-        content="Ayman helps businesses increase organic traffic with technical SEO, clean architecture, and intent-driven optimization. Free SEO audits available.">
-    <meta property="og:image" content="https://i95compile.github.io/AymanAtif/SEO-Expert/assets/images/ayman-atif.jpeg">
+        content="I build high-quality web, desktop, and mobile applications with modern designs and excellent user experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aymanzbuilding.github.io/Ayman-Atif/">
+    <meta property="og:image" content="https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://i95compile.github.io/AymanAtif/SEO-Expert">
-    <meta property="twitter:title" content="Ayman - SEO & Web Optimization">
-    <meta property="twitter:description"
-        content="Ayman helps businesses increase organic traffic with technical SEO, clean architecture, and intent-driven optimization. Free SEO audits available.">
-    <meta property="twitter:image"
-        content="https://i95compile.github.io/AymanAtif/SEO-Expert/assets/images/ayman-atif.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ayman Atif | Full-Stack Developer">
+    <meta name="twitter:description"
+        content="I build high-quality web, desktop, and mobile applications with modern designs and excellent UX.">
+    <meta name="twitter:image" content="https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg">
 
-    <!-- Favicon -->
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
 
-    <!-- Clash Display (Titles) -->
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ayman Atif",
+  "url": "https://aymanzbuilding.github.io/Ayman-Atif/",
+  "image": "https://aymanzbuilding.github.io/Ayman-Atif/assets/images/ayman-atif.jpeg",
+  "jobTitle": "Full-Stack Developer",
+  "sameAs": [
+    "https://www.linkedin.com/in/a95yman/",
+    "https://github.com/aymanbuilds",
+    "https://wa.me/212688459384"
+  ],
+  "description": "Full-stack developer specializing in web, desktop, and mobile applications. I create high-quality, modern, and functional digital experiences.",
+  "knowsAbout": [
+    "Web Development",
+    "Mobile Development",
+    "Desktop Applications",
+    "SEO",
+    "C#",
+    ".NET",
+    "Python",
+    "JavaScript",
+    "React",
+    "Tailwind CSS",
+    "SQL",
+    "UI/UX Design"
+  ]
+}
+</script>
 
-    <!-- Poppins (Body & UI) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-
-    <!-- Tailwind CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind Font Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        title: ['"Clash Display"', 'sans-serif'],
-                        body: ['Poppins', 'sans-serif'],
-                    },
-                },
-            },
-        };
-    </script>
 
     <style>
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth
+        }
+
+        #mobileMenu.show a,
+        .fade-group.visible .fade-in {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        body {
+            font-family: Syne, Arial, sans-serif
+        }
+
+        .title-font {
+            font-family: Poppins, Arial, sans-serif
+        }
+
+        section {
+            scroll-margin-block-start: 80px
         }
 
         @keyframes float {
 
             0%,
             100% {
-                transform: translateY(0) rotate(var(--tw-rotate));
+                transform: translateY(0)
             }
 
             50% {
-                transform: translateY(-12px) rotate(var(--tw-rotate));
+                transform: translateY(-12px)
             }
         }
 
-        /* Initial state for all animated elements */
-        .animate-in {
+        .faq-section {
+            background: #fff;
+            padding: 60px 0 80px
+        }
+
+        .faq-wrapper {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: start
+        }
+
+        .faq-left .faq-label {
+            color: #6b7280;
+            margin-bottom: 10px
+        }
+
+        .faq-left .faq-title {
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            margin-bottom: 20px
+        }
+
+        .faq-btn {
+            padding: 12px 24px;
+            background: #000;
+            color: #fff;
+            border-radius: 50px;
+            border: none
+        }
+
+        .faq-right {
+            display: flex;
+            flex-direction: column;
+            gap: 30px
+        }
+
+        .faq-item {
+            width: 100%
+        }
+
+        .faq-item input {
+            display: none
+        }
+
+        .faq-question {
+            display: block;
+            background: #eaeaf3;
+            padding: 22px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 550;
+            position: relative;
+            transition: background .3s
+        }
+
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 24px;
+            font-size: 22px;
+            top: 15px;
+            transition: transform .3s
+        }
+
+        .faq-item input:checked+.faq-question::after {
+            transform: rotate(45deg)
+        }
+
+        .faq-answer {
+            background: #f6f6ff;
+            margin-top: -18px;
+            padding: 0 22px;
+            border-radius: 0 0 40px 40px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .35s, padding .3s
+        }
+
+        .faq-item input:checked~.faq-answer {
+            max-height: 300px;
+            padding: 28px 22px 22px
+        }
+
+        @media (max-width:800px) {
+            .faq-wrapper {
+                grid-template-columns: 1fr
+            }
+        }
+
+        header.main {
+            position: sticky;
+            top: 0;
+            z-index: 9999999999;
+            transition: background-color .4s, padding .4s
+        }
+
+        .bg-eaeaf3 {
+            background-color: #eaeaf3 !important;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important
+        }
+
+        #bgName .letter {
+            line-height: 1
+        }
+
+        #bgName br {
+            display: block;
+            height: 0
+        }
+
+        @media (min-width:1001px) {
+            #bgName {
+                font-size: 20vw !important
+            }
+        }
+
+        @media (max-width:1000px) {
+            #bgName {
+                font-size: 22vw !important
+            }
+        }
+
+        #mobileMenu a {
+            transform: translateY(50px);
+            opacity: 0;
+            transition: transform .5s, opacity .5s
+        }
+
+        #mobileMenu.show a:first-child {
+            transition-delay: 0.1s
+        }
+
+        #mobileMenu.show a:nth-child(2) {
+            transition-delay: 0.2s
+        }
+
+        #mobileMenu.show a:nth-child(3) {
+            transition-delay: 0.3s
+        }
+
+        #mobileMenu.show a:nth-child(4) {
+            transition-delay: 0.4s
+        }
+
+        #mobileMenu.show a:nth-child(5) {
+            transition-delay: 0.5s
+        }
+
+        #mobileMenu.show a:nth-child(6) {
+            transition-delay: 0.6s
+        }
+
+        #mobileMenu:not(.show) a {
+            transition-delay: 0s !important
+        }
+
+        @media (max-width:768px) {
+            #contact {
+                padding-bottom: 0
+            }
+
+            footer {
+                padding-top: 40px
+            }
+
+            .title-font,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: 1.7rem !important;
+                line-height: 1.1rem
+            }
+        }
+
+        .fade-group .fade-in {
             opacity: 0;
             transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transition: opacity .3s ease-out, transform .3s ease-out
         }
 
-        /* Triggered state */
-        .animate-in.active {
-            opacity: 1;
-            transform: translateY(0);
+        #home {
+            scroll-margin-block-start: 280px
         }
     </style>
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ayman",
-  "url": "https://i95compile.github.io/AymanAtif/SEO-Expert",
-  "image": "https://i95compile.github.io/AymanAtif/SEO-Expert/assets/images/ayman-atif.jpeg",
-  "jobTitle": "SEO Consultant",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "AymanAtif SEO Services",
-    "url": "https://i95compile.github.io/AymanAtif/SEO-Expert"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/in/a95yman/",
-    "https://wa.me/212701971272"
-  ],
-  "description": "Ayman helps businesses increase organic traffic with technical SEO, clean architecture, and intent-driven optimization. Free SEO audits available.",
-  "knowsAbout": "SEO, Technical SEO, On-Page SEO, Content SEO, SEO Audit, Organic Traffic, Web Optimization, SEO Strategy"
-}
-</script>
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "AymanAtif SEO Services",
-  "url": "https://i95compile.github.io/AymanAtif/SEO-Expert",
-  "logo": "https://i95compile.github.io/AymanAtif/SEO-Expert/assets/images/ayman-atif.jpeg",
-  "image": "https://i95compile.github.io/AymanAtif/SEO-Expert/assets/images/ayman-atif.jpeg",
-  "priceRange": "$$$",
-  "description": "SEO consultancy specializing in technical SEO, content optimization, and strategies to increase organic traffic and conversions.",
-  "telephone": "+212701971272",
-  "email": "a95yman@gmail.com",
-  "sameAs": [
-    "https://www.linkedin.com/in/a95yman/",
-    "https://wa.me/212701971272"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Morocco",
-    "addressCountry": "MA"
-  }
-}
-</script>
 </head>
 
-<body class="font-body bg-white text-gray-900">
+<body class="bg-[#eaeaf3]">
 
-    <header class="sticky top-0 z-50 bg-white">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- HEADER -->
+    <header class="main w-full py-6 fixed top-0 left-0 z-50 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center relative">
 
-            <!-- Logo -->
-            <div class="font-title text-xl font800">
-                Ayman
+            <!-- LOGO / LEFT NAV (hidden on mobile) -->
+            <div class="bg-black py-3 px-6 rounded-full hidden md:flex">
+                <nav class="flex items-center gap-8 text-white font-semibold">
+                    <a href="#home" class="hover:text-gray-300 transition">Home</a>
+                    <a href="#services" class="hover:text-gray-300 transition">Services</a>
+                    <a href="#about" class="hover:text-gray-300 transition">About</a>
+                    <a href="#work" class="hover:text-gray-300 transition">UI Showcase</a>
+                    <a href="#testimonials" class="hover:text-gray-300 transition">Testimonials</a>
+                </nav>
             </div>
 
-            <!-- Nav -->
-            <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
-                <a href="#home" class="hover:text-black transition">Home</a>
-                <a href="#services" class="hover:text-black transition">Services</a>
-                <a href="#process" class="hover:text-black transition">Process</a>
-                <a href="#work" class="hover:text-black transition">Work</a>
-                <a href="#faq" class="hover:text-black transition">FAQ</a>
-            </nav>
-
-            <!-- Contact Button -->
-            <a href="https://wa.me/212701971272?text=Hi!"
-                class="group flex items-center gap-3 rounded-full bg-gray-900 text-white px-5 py-2 text-sm font-medium">
-                Contact Me
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-                    class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
-                </svg>
+            <!-- HIRE ME BUTTON (hidden on mobile) -->
+            <a href="#contact"
+                class="hidden md:flex items-center gap-3 bg-white text-black p-1.5 pr-4 rounded-full shadow-md transition duration-300 hover:bg-gray-100 hover:scale-105 hover:shadow-xl">
+                <div
+                    class="w-10 h-10 flex items-center justify-center bg-black text-white rounded-full transition duration-300 hover:bg-white hover:text-black">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                Hire Me
             </a>
 
+            <!-- MENU BUTTON (mobile only) -->
+            <button id="menuBtn" class="md:hidden text-black p-2 rounded-md focus:outline-none z-50"
+                aria-label="Open menu">
+                <i class="bi bi-list text-3xl"></i>
+            </button>
+
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu"
+            class="fixed inset-0 bg-black bg-opacity-95 flex flex-col items-center justify-center space-y-6 text-white text-2xl transform translate-y-full transition-transform duration-500 ease-in-out">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#work">UI Showcase</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Hire Me</a>
         </div>
     </header>
 
-    <section id="home" class="relative overflow-hidden">
+    <main>
+        <section id="home" class="relative max-w-7xl mx-auto px-6 mt-24 text-center">
 
-        <!-- Background -->
-        <div class="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100"></div>
-
-        <div class="relative z-20 max-w-7xl mx-auto px-6 py-28 text-center">
-
-            <!-- Open for work tag -->
-            <div class="animate-in inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
-                <span class="w-2 h-2 rounded-full bg-green-500"></span>
-                <span class="text-sm font-medium text-gray-700">Open for work</span>
+            <!-- BACKGROUND NAME -->
+            <div id="bgName" class="absolute inset-0 flex items-center justify-center pointer-events-none select-none
+               font-extrabold text-gray-400 opacity-20 tracking-tight title-font">
+                AYMAN
             </div>
 
-            <!-- Title -->
-            <h1 class="animate-in mt-6 font-title text-4xl font-semibold">SEO that actually converts</h1>
+            <!-- FOREGROUND HERO CONTENT -->
+            <div class="relative z-10">
+                <h1 class="title-font text-5xl md:text-6xl font-extrabold text-black leading-tight">
+                    Creative Developer<br />Crafting Modern Experiences
+                </h1>
 
-            <!-- Paragraph -->
-            <p class="animate-in mt-6 max-w-2xl mx-auto text-gray-600 text-lg">
-                I help businesses increase organic traffic with technical SEO,
-                clean architecture, and intent-driven optimization.
-            </p>
-
-            <!-- Buttons -->
-            <div class="mt-10 flex justify-center gap-4 flex-wrap">
-
-                <!-- Primary -->
-                <a href="javascript:void(0)"
-                    class="animate-in seo-audit-btn flex items-center gap-3 rounded-full bg-gray-900 text-white px-6 py-3 text-sm font-medium">
-                    Get a free SEO audit
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-                        class="bi bi-pie-chart" viewBox="0 0 16 16">
-                        <path
-                            d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793zm1 0V7.5h6.482A7 7 0 0 0 8.5 1.018M14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8" />
-                    </svg>
-                </a>
-
-                <!-- Secondary -->
-                <a href="#services"
-                    class="animate-in flex items-center gap-3 rounded-full bg-white text-black px-6 py-3 text-sm font-medium border border-gray-300">
-                    See how it works
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-                        class="bi bi-arrow-down-right-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 5.146a.5.5 0 1 0-.708.708L9.243 9.95H6.475a.5.5 0 1 0 0 1h3.975a.5.5 0 0 0 .5-.5V6.475a.5.5 0 1 0-1 0v2.768z" />
-                    </svg>
-                </a>
-
-            </div>
-
-            <!-- Social proof -->
-            <div class="animate-in mt-12 flex items-center justify-center gap-4 flex-wrap">
-
-                <!-- Avatars -->
-                <div class="flex -space-x-3">
-                    <div
-                        class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-sm font-medium">
-                        A</div>
-                    <div
-                        class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-sm font-medium">
-                        B</div>
-                    <div
-                        class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-sm font-medium">
-                        C</div>
-                    <div
-                        class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-sm font-medium">
-                        D</div>
-                </div>
-
-                <!-- Stars -->
-                <div class="flex items-center gap-1 text-yellow-400 text-lg">
-                    ★ ★ ★ ★ ★
-                </div>
-
-                <span class="text-sm text-gray-500">
-                    Trusted by clients worldwide
-                </span>
-
-            </div>
-        </div>
-
-        <!-- ================= Floating Testimonials ================= -->
-
-        <!-- Left testimonials -->
-        <div class="animate-in absolute left-6 top-0 h-full hidden lg:flex flex-col justify-center gap-32">
-            <div
-                class="bg-white p-5 rounded-xl shadow-sm max-w-xs transform -rotate-6 opacity-60 animate-[float_10s_ease-in-out_infinite]">
-                <span class="absolute top-2 right-3 text-2xl text-gray-300">“</span>
-                SEO finally made sense. Clear process and real results.
-            </div>
-            <div
-                class="bg-white p-5 rounded-xl shadow-sm max-w-xs transform rotate-3 opacity-80 animate-[float_12s_ease-in-out_infinite]">
-                <span class="absolute top-2 right-3 text-2xl text-gray-300">“</span>
-                Our traffic doubled without paid ads.
-            </div>
-        </div>
-
-        <!-- Right testimonials -->
-        <div class="animate-in absolute right-6 top-0 h-full hidden lg:flex flex-col justify-center gap-32">
-            <div
-                class="bg-white p-5 rounded-xl shadow-sm max-w-xs transform rotate-6 opacity-80 animate-[float_11s_ease-in-out_infinite]">
-                <span class="absolute top-2 right-3 text-2xl text-gray-300">“</span>
-                Technical SEO done properly.
-            </div>
-            <div
-                class="bg-white p-5 rounded-xl shadow-sm max-w-xs transform -rotate-3 opacity-60 animate-[float_9s_ease-in-out_infinite]">
-                <span class="absolute top-2 right-3 text-2xl text-gray-300">“</span>
-                Honest advice, no SEO nonsense.
-            </div>
-        </div>
-
-    </section>
-
-    <section id="services" class="relative bg-gray-50 py-32">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20">
-
-            <!-- LEFT (STICKY) -->
-            <div class="lg:sticky lg:top-32 h-fit">
-                <h2 class="font-title text-5xl leading-tight">
-                    <span class="text-black">A Structured SEO Process Designed</span><br />
-                    <span class="text-gray-400">for Long-Term Growth</span>
-                </h2>
-
-                <p class="mt-6 font-body text-gray-600 max-w-md">
-                    A structured, transparent process focused on long-term growth - not shortcuts or SEO tricks.
-                </p>
-            </div>
-
-            <!-- RIGHT (TIMELINE) -->
-            <div class="relative">
-
-                <!-- Timeline line -->
-                <div class="absolute left-4 top-0 h-full w-[2px] bg-gray-200"></div>
-
-                <!-- Progress line -->
-                <div class="absolute left-4 top-0 h-full w-[2px] bg-gray-200 hidden lg:block"></div>
-                <div id="timeline-progress"
-                    class="absolute left-4 top-0 w-[2px] bg-blue-500 origin-top hidden lg:block"></div>
-
-                <!-- Items -->
-                <div class="flex flex-col gap-24">
-
-                    <div class="relative flex gap-10 timeline-item">
-                        <div
-                            class="timeline-dot hidden lg:flex relative z-10 flex items-center justify-center w-8 h-8 rounded-full border-2 border-gray-300 bg-white text-sm font-semibold transition-colors">
-                            1
-                        </div>
-
-                        <div class="timeline-card opacity-0 translate-y-6 transition-all duration-500">
-                            <div class="bg-white p-6 rounded-xl shadow-md max-w-md">
-                                <h3 class="font-title text-xl font-semibold">
-                                    Full Technical SEO Audit & Infrastructure Review
-                                </h3>
-                                <p class="mt-3 text-gray-600 font-body text-sm leading-relaxed">
-                                    I analyze your website’s technical foundation including crawlability,
-                                    indexing, page speed, Core Web Vitals, internal linking, and overall
-                                    architecture to uncover issues that silently block growth.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-10 timeline-item">
-                        <div
-                            class="timeline-dot hidden lg:flex relative z-10 flex items-center justify-center w-8 h-8 rounded-full border-2 border-gray-300 bg-white text-sm font-semibold transition-colors">
-                            2
-                        </div>
-
-                        <div class="timeline-card opacity-0 translate-y-6 transition-all duration-500">
-                            <div class="bg-white p-6 rounded-xl shadow-md max-w-md">
-                                <h3 class="font-title text-xl font-semibold">
-                                    Strategic Keyword Research & Search Intent Mapping
-                                </h3>
-                                <p class="mt-3 text-gray-600 font-body text-sm leading-relaxed">
-                                    I identify keywords that match real user intent, analyze competition,
-                                    and map them to the right pages so your content targets traffic that
-                                    actually converts instead of vanity rankings.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-10 timeline-item">
-                        <div
-                            class="timeline-dot hidden lg:flex relative z-10 flex items-center justify-center w-8 h-8 rounded-full border-2 border-gray-300 bg-white text-sm font-semibold transition-colors">
-                            3
-                        </div>
-
-                        <div class="timeline-card opacity-0 translate-y-6 transition-all duration-500">
-                            <div class="bg-gray-900 p-6 rounded-xl shadow-md max-w-md">
-                                <h3 class="font-title text-xl font-semibold text-white">
-                                    On-Page Optimization & Content Structuring
-                                </h3>
-                                <p class="mt-3 text-gray-300 font-body text-sm leading-relaxed">
-                                    I optimize headings, metadata, internal links, and content structure so
-                                    each page communicates clearly with search engines while guiding users
-                                    toward meaningful actions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-10 timeline-item">
-                        <div
-                            class="timeline-dot hidden lg:flex relative z-10 flex items-center justify-center w-8 h-8 rounded-full border-2 border-gray-300 bg-white text-sm font-semibold transition-colors">
-                            4
-                        </div>
-
-                        <div class="timeline-card opacity-0 translate-y-6 transition-all duration-500">
-                            <div class="bg-white p-6 rounded-xl shadow-md max-w-md">
-                                <h3 class="font-title text-xl font-semibold">
-                                    SEO-Driven Content Strategy & Planning
-                                </h3>
-                                <p class="mt-3 text-gray-600 font-body text-sm leading-relaxed">
-                                    I design a content plan based on keyword opportunities, topical
-                                    authority, and business goals, ensuring each piece supports rankings,
-                                    internal linking, and long-term organic growth.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-10 timeline-item">
-                        <div
-                            class="timeline-dot hidden lg:flex relative z-10 flex items-center justify-center w-8 h-8 rounded-full border-2 border-gray-300 bg-white text-sm font-semibold transition-colors">
-                            5
-                        </div>
-
-                        <div class="timeline-card opacity-0 translate-y-6 transition-all duration-500">
-                            <div class="bg-white p-6 rounded-xl shadow-md max-w-md">
-                                <h3 class="font-title text-xl font-semibold">
-                                    Performance Tracking, Iteration & Continuous Improvement
-                                </h3>
-                                <p class="mt-3 text-gray-600 font-body text-sm leading-relaxed">
-                                    I monitor rankings, traffic, and user behavior, then refine strategies
-                                    based on real data - ensuring your SEO improves continuously instead of
-                                    stagnating after launch.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="process" class="py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-
-            <!-- Header -->
-            <div class="animate-in max-w-3xl">
-                <h2 class="font-title text-5xl leading-tight">
-                    <span class="animate-in text-black">How We Work Together</span><br />
-                    <span class="animate-in text-gray-400">From first call to real results</span>
-                </h2>
-
-                <p class="animate-in mt-6 text-gray-600 max-w-xl">
-                    No vague promises, no black-box SEO. Just a clear process focused on measurable growth.
-                </p>
-            </div>
-
-            <!-- Steps -->
-            <div class="animate-in mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                <!-- Step 1 -->
-                <div class="animate-in p-6 rounded-2xl border border-gray-200 bg-gray-50">
-                    <span class="text-sm font-semibold text-gray-400">01</span>
-                    <h3 class="mt-4 font-title text-xl font-semibold">
-                        Discovery & Goals
-                    </h3>
-                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-                        We clarify your business goals, audience, competitors, and current SEO state before touching
-                        anything.
-                    </p>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="animate-in p-6 rounded-2xl border border-gray-200 bg-gray-50">
-                    <span class="text-sm font-semibold text-gray-400">02</span>
-                    <h3 class="mt-4 font-title text-xl font-semibold">
-                        Audit & Roadmap
-                    </h3>
-                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-                        You get a prioritized SEO roadmap explaining what to fix, what to build, and why it matters.
-                    </p>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="animate-in p-6 rounded-2xl border border-gray-200 bg-gray-50">
-                    <span class="text-sm font-semibold text-gray-400">03</span>
-                    <h3 class="mt-4 font-title text-xl font-semibold">
-                        Execution & Optimization
-                    </h3>
-                    <p class="mt-3 text-sm text-gray-600 leading-relaxed">
-                        Technical fixes, on-page improvements, and content optimization - executed cleanly and
-                        strategically.
-                    </p>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="animate-in p-6 rounded-2xl border border-gray-900 bg-gray-900 text-white">
-                    <span class="text-sm font-semibold text-gray-400">04</span>
-                    <h3 class="mt-4 font-title text-xl font-semibold">
-                        Tracking & Growth
-                    </h3>
-                    <p class="mt-3 text-sm text-gray-300 leading-relaxed">
-                        We track results, refine strategies, and continuously improve based on real performance data.
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- CTA -->
-            <div class="animate-in mt-20">
-                <a href="javascript:void(0)"
-                    class="seo-audit-btn inline-flex items-center gap-3 rounded-full bg-gray-900 text-white px-6 py-3 text-sm font-medium">
-                    Start with a free SEO audit
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-                        class="bi bi-pie-chart" viewBox="0 0 16 16">
-                        <path
-                            d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793zm1 0V7.5h6.482A7 7 0 0 0 8.5 1.018M14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8" />
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="work" class="relative py-32 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20">
-
-            <!-- LEFT / INTRO -->
-            <div class="lg:sticky lg:top-32 h-fit">
-                <span class="text-sm font-medium text-gray-400 uppercase">
-                    Work
-                </span>
-
-                <h2 class="mt-4 font-title text-5xl leading-tight">
-                    <span class="text-black">SEO Experiments</span><br />
-                    <span class="text-gray-400">& Breakdowns</span>
-                </h2>
-
-                <p class="mt-6 text-gray-600 max-w-md">
-                    I treat SEO as a system - not a checklist.
-                    These are real-world SEO experiments and breakdowns showing how I analyze,
-                    test, and improve organic performance.
+                <p class="mt-6 text-lg text-gray-700 max-w-xl mx-auto">
+                    I build visually polished and highly functional websites that blend performance, clarity, and great
+                    user
+                    experience.
                 </p>
 
-                <p class="mt-4 text-sm text-gray-400 max-w-md">
-                    These are sample projects designed to demonstrate methodology,
-                    decision-making, and expected outcomes.
-                </p>
-            </div>
-
-            <!-- RIGHT / EXPERIMENTS -->
-            <div class="flex flex-col gap-16">
-
-                <!-- Experiment 01 -->
-                <div class="group border-l-2 border-gray-200 pl-8">
-                    <span class="animate-in text-xs font-semibold text-gray-400">
-                        Experiment 01
-                    </span>
-
-                    <h3 class="animate-in mt-3 font-title text-2xl font-semibold">
-                        Fixing Crawl Waste on a Local Services Site
-                    </h3>
-
-                    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Problem</p>
-                            <p class="mt-2 text-gray-600">
-                                Important service pages were indexed inconsistently while low-value
-                                URLs consumed crawl budget.
-                            </p>
-                        </div>
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Action</p>
-                            <p class="mt-2 text-gray-600">
-                                Controlled indexation using internal linking, noindex rules,
-                                and sitemap prioritization.
-                            </p>
-                        </div>
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Expected Result</p>
-                            <p class="mt-2 text-gray-600">
-                                Improved crawl efficiency, faster indexing,
-                                and more stable rankings for core pages.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Experiment 02 -->
-                <div class="group border-l-2 border-gray-200 pl-8">
-                    <span class="animate-in text-xs font-semibold text-gray-400">
-                        Experiment 02
-                    </span>
-
-                    <h3 class="animate-in mt-3 font-title text-2xl font-semibold">
-                        Turning a Blog into an Intent-Driven Traffic Engine
-                    </h3>
-
-                    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Problem</p>
-                            <p class="mt-2 text-gray-600">
-                                Blog posts existed in isolation with no topical authority
-                                or clear conversion paths.
-                            </p>
-                        </div>
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Action</p>
-                            <p class="mt-2 text-gray-600">
-                                Built content clusters around search intent and connected
-                                articles using structured internal linking.
-                            </p>
-                        </div>
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Expected Result</p>
-                            <p class="mt-2 text-gray-600">
-                                Increased non-branded traffic, improved rankings,
-                                and stronger engagement across the blog.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Experiment 03 -->
-                <div class="group border-l-2 border-gray-900 pl-8">
-                    <span class="animate-in text-xs font-semibold text-gray-400">
-                        Experiment 03
-                    </span>
-
-                    <h3 class="animate-in mt-3 font-title text-2xl font-semibold">
-                        Optimizing E-commerce Category Pages for Conversion
-                    </h3>
-
-                    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Problem</p>
-                            <p class="mt-2 text-gray-600">
-                                Category pages ranked but failed to convert
-                                due to poor structure and UX.
-                            </p>
-                        </div>
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Action</p>
-                            <p class="mt-2 text-gray-600">
-                                Reworked page hierarchy, content placement,
-                                and internal linking with CRO in mind.
-                            </p>
-                        </div>
-
-                        <div class="animate-in">
-                            <p class="font-medium text-gray-900">Expected Result</p>
-                            <p class="mt-2 text-gray-600">
-                                Higher engagement, better conversions,
-                                and stronger performance on commercial keywords.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-
-            <!-- Header -->
-            <div class="animate-in max-w-3xl">
-                <h2 class="font-title text-5xl leading-tight">
-                    <span class="animate-in text-black">Frequently Asked Questions</span><br />
-                    <span class="animate-in text-gray-400">Clear answers, no surprises</span>
-                </h2>
-
-                <p class="animate-in mt-6 text-gray-600 max-w-xl">
-                    These are the questions I’m asked most often before starting an SEO project.
-                    If something isn’t covered here, feel free to reach out directly.
-                </p>
-            </div>
-
-            <!-- FAQ Grid -->
-            <div class="animate-in mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                <!-- Q1 -->
-                <div class="animate-in bg-white p-6 rounded-2xl border border-gray-200">
-                    <h3 class="font-title text-xl font-semibold">
-                        How long does SEO take to show results?
-                    </h3>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                        SEO is not instant. In most cases, early signals appear within 6–8 weeks,
-                        while meaningful traffic and ranking improvements typically happen over
-                        3–6 months. Long-term, SEO compounds and becomes one of the most stable
-                        acquisition channels.
-                    </p>
-                </div>
-
-                <!-- Q2 -->
-                <div class="animate-in bg-white p-6 rounded-2xl border border-gray-200">
-                    <h3 class="font-title text-xl font-semibold">
-                        Do you guarantee rankings or traffic?
-                    </h3>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                        No - and anyone who does is not being honest. What I do guarantee is a
-                        clean process, best-practice execution, transparent reporting, and decisions
-                        based on data and search intent, not guesses.
-                    </p>
-                </div>
-
-                <!-- Q3 -->
-                <div class="animate-in bg-white p-6 rounded-2xl border border-gray-200">
-                    <h3 class="font-title text-xl font-semibold">
-                        Is this technical SEO, content SEO, or both?
-                    </h3>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                        Both. Technical SEO creates the foundation, while content and on-page
-                        optimization drive growth. I focus on aligning infrastructure, content,
-                        and intent so everything works together instead of in isolation.
-                    </p>
-                </div>
-
-                <!-- Q4 -->
-                <div class="animate-in bg-white p-6 rounded-2xl border border-gray-200">
-                    <h3 class="font-title text-xl font-semibold">
-                        Will this work for my type of business?
-                    </h3>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                        SEO works best for businesses with clear search demand and a long-term
-                        growth mindset. During the audit phase, I assess whether SEO makes sense
-                        for your specific market before recommending next steps.
-                    </p>
-                </div>
-
-                <!-- PRICING (HIGHLIGHTED) -->
-                <div class="animate-in lg:col-span-2 bg-gray-900 p-8 rounded-2xl text-white">
-                    <h3 class="font-title text-2xl font-semibold">
-                        How much does SEO cost?
-                    </h3>
-
-                    <p class="mt-4 text-gray-300 text-sm leading-relaxed max-w-3xl">
-                        Pricing depends on your website size, competition level, and goals.
-                        I don’t offer one-size-fits-all packages because SEO strategies should
-                        be tailored, not recycled.
-                    </p>
-
-                    <p class="mt-4 text-gray-300 text-sm leading-relaxed max-w-3xl">
-                        Most projects typically fall within a monthly range after an initial audit.
-                        After reviewing your site, I’ll provide a clear scope, priorities,
-                        and pricing - with no hidden costs or long-term lock-ins.
-                    </p>
-                </div>
-
-                <!-- Q6 -->
-                <div class="animate-in bg-white p-6 rounded-2xl border border-gray-200">
-                    <h3 class="font-title text-xl font-semibold">
-                        Do you work on existing sites or only new ones?
-                    </h3>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                        Both. I often work on existing websites that need cleanup, restructuring,
-                        or strategic direction. New sites benefit from building SEO correctly
-                        from day one.
-                    </p>
-                </div>
-
-                <!-- Q7 -->
-                <div class="animate-in bg-white p-6 rounded-2xl border border-gray-200">
-                    <h3 class="font-title text-xl font-semibold">
-                        What do you need from me to get started?
-                    </h3>
-                    <p class="mt-4 text-gray-600 text-sm leading-relaxed">
-                        Access to analytics tools (if available), a basic understanding of your
-                        business goals, and openness to collaboration. I handle the technical
-                        and strategic heavy lifting.
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- Final CTA -->
-            <div class="animate-in mt-20">
-                <a href="javascript:void(0)"
-                    class="seo-audit-btn inline-flex items-center gap-3 rounded-full bg-gray-900 text-white px-6 py-3 text-sm font-medium">
-                    Get a free SEO audit
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-                        class="bi bi-pie-chart" viewBox="0 0 16 16">
-                        <path
-                            d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793zm1 0V7.5h6.482A7 7 0 0 0 8.5 1.018M14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8" />
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact" class="bg-neutral-900 text-white py-24">
-        <div class="max-w-6xl mx-auto px-6">
-
-            <h2 class="font-title text-5xl leading-tight text-center">
-                <span class="text-white">Ready to Boost Your</span><br />
-                <span class="text-neutral-400">Organic Traffic & Growth?</span>
-            </h2>
-
-            <div class="flex flex-col md:flex-row md:divide-x md:divide-neutral-700 text-center mt-16">
-
-                <!-- Item -->
-                <div class="flex-1 px-8 py-10">
-                    <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Whatsapp</h3>
-                    <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
-                        <a href="https://wa.me/212701971272?text=Hi!" target="_blank">+212 701-971272</a>
-                    </p>
-                    <p class="mt-2 text-sm text-neutral-400">Quick questions, SEO audit requests, or consultation.</p>
-                </div>
-
-                <!-- Item -->
-                <div class="flex-1 px-8 py-10">
-                    <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Email</h3>
-                    <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
-                        <a href="mailto:a95yman@gmail.com" target="_blank">a95yman@gmail.com</a>
-                    </p>
-                    <p class="mt-2 text-sm text-neutral-400">Send me detailed site info or SEO inquiries.</p>
-                </div>
-
-                <!-- Item -->
-                <div class="flex-1 px-8 py-10">
-                    <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">LinkedIn</h3>
-                    <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
-                        <a href="https://www.linkedin.com/in/a95yman/">@a95yman</a>
-                    </p>
-                    <p class="mt-2 text-sm text-neutral-400">Connect & discuss SEO strategy or collaborations.</p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="bg-neutral-900 text-white pb-20">
-        <div class="max-w-6xl mx-auto px-6">
-
-            <!-- Menu -->
-            <nav class="flex flex-wrap justify-center gap-8 text-sm mb-14 text-neutral-300">
-                <a href="#home" class="hover:text-white transition">Home</a>
-                <a href="#services" class="hover:text-white transition">Services</a>
-                <a href="#process" class="hover:text-white transition">Process</a>
-                <a href="#work" class="hover:text-white transition">Work</a>
-                <a href="#faq" class="hover:text-white transition">FAQ</a>
-            </nav>
-
-            <!-- Main Footer CTA -->
-            <div class="text-center max-w-2xl mx-auto">
-                <h3 class="text-3xl mb-4 leading-tight text-center">
-                    Your Website, Optimized for Traffic & Conversions.
-                </h3>
-
-                <p class="mt-6 mb-6 text-neutral-300 m-auto max-w-md">
-                    I specialize in actionable SEO strategies, technical audits, and content optimization
-                    that drive measurable results. Let’s collaborate to grow your organic presence.
-                </p>
-
-                <div class="flex">
-                    <a href="#javascript:void(0)"
-                        class="seo-audit-btn flex items-center gap-3 rounded-full bg-white text-black px-6 py-3 text-sm font-medium border border-gray-300 m-auto">
-                        Get a Free SEO Audit
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-                            class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
-                        </svg>
+                <div class="flex justify-center">
+                    <a href="#services"
+                        class="mt-8 block w-auto self-center bg-black text-white px-10 py-3 rounded-full shadow-md transition hover:bg-gray-800 hover:scale-105">
+                        Learn More
                     </a>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </footer>
+        <section id="services" class="max-w-7xl mx-auto px-6 mt-32 pb-8">
+            <!-- TITLE + SUBTITLE -->
+            <div class="mb-16 fade-group">
+                <h2 class="fade-in text-4xl md:text-5xl font-extrabold text-left text-black title-font">My Services</h2>
+                <p class="fade-in mt-4 text-gray-700 max-w-xl ml-8">
+                    I provide a wide range of services, from web and mobile development to desktop solutions and SEO
+                    optimization.
+                </p>
+            </div>
 
-    <!-- Popup Modal -->
-    <div id="seo-popup" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-        <div class="bg-white rounded-2xl max-w-md w-full p-8 relative">
+            <!-- FIRST ROW -->
+            <div class="flex flex-col md:flex-row gap-8 mb-8 fade-group">
+                <!-- CARD 1 (40%, white, left-aligned) -->
+                <div class="fade-in bg-white rounded-2xl p-8 flex flex-col justify-between w-full md:w-[40%]">
+                    <p class="text-gray-600 mb-8">Custom websites crafted with performance, accessibility, and
+                        scalability
+                        in mind. Great for startups and enterprises alike.</p>
+                    <div class="flex flex-wrap justify-between items-center">
+                        <h3 class="text-2xl font-bold">Web Development</h3>
+                        <span class="text-3xl font-extrabold text-gray-800">01</span>
+                    </div>
+                </div>
 
-            <!-- Close Button -->
-            <button id="close-popup" class="absolute top-4 right-4 text-gray-500 hover:text-gray-900">
-                ✕
-            </button>
+                <!-- CARD 2 (60%, gradient, reversed content) -->
+                <div class="fade-in bg-gradient-to-br from-violet-500 to-purple-700 text-white rounded-2xl p-8 flex flex-col-reverse justify-between w-full md:w-[60%]"
+                    style="clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0% 100%);">
+                    <div class="flex flex-wrap justify-between items-center md:flex-row-reverse">
+                        <h3 class="text-2xl font-bold">Desktop Applications</h3>
+                        <span class="text-3xl font-extrabold">02</span>
+                    </div>
+                    <p class="mb-8">Robust desktop apps for productivity, finance, and enterprise solutions, tailored to
+                        your needs.</p>
+                </div>
+            </div>
 
-            <!-- Header -->
-            <h3 class="font-title text-2xl mb-4 text-gray-900">Get Your Free SEO Audit</h3>
-            <p class="text-gray-600 mb-6 text-sm">Enter your website link below and I’ll reach out directly via
-                WhatsApp.</p>
+            <!-- SECOND ROW -->
+            <div class="flex flex-col md:flex-row gap-8 fade-group">
+                <!-- CARD 3 (60%, gradient) -->
+                <div
+                    class="fade-in bg-gradient-to-br from-violet-500 to-purple-700 text-white rounded-2xl p-8 flex flex-col justify-between w-full md:w-[60%]">
+                    <p class="mb-8">Creating intuitive mobile applications for iOS and Android with great UX, smooth
+                        animations, and high performance.</p>
+                    <div class="flex flex-wrap justify-between items-center">
+                        <h3 class="text-2xl font-bold">Mobile Development</h3>
+                        <span class="text-3xl font-extrabold">03</span>
+                    </div>
+                </div>
 
-            <!-- Form -->
-            <form id="seo-form" class="flex flex-col gap-4">
-                <input type="url" id="website-link" placeholder="https://yourwebsite.com"
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
-                    required>
-                <button type="submit"
-                    class="flex justify-center items-center gap-3 bg-gray-900 text-white px-4 py-3 rounded-lg font-medium hover:bg-gray-800 transition">
-                    Get My Free SEO Audit
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-whatsapp" viewBox="0 0 16 16">
-                        <path
-                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                    </svg>
-                </button>
-            </form>
+                <!-- CARD 4 (40%, white, reversed content) -->
+                <div class="fade-in bg-white rounded-2xl p-8 flex flex-col-reverse justify-between w-full md:w-[40%]"
+                    style="clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0% 100%);">
+                    <div class="flex flex-wrap justify-between items-center md:flex-row-reverse">
+                        <h3 class="text-2xl font-bold">Support & SEO</h3>
+                        <span class="text-3xl font-extrabold text-gray-800">04</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Ongoing support, website optimization, and SEO strategies for
+                        continuous
+                        growth and visibility.</p>
+                </div>
+            </div>
+        </section>
 
-        </div>
-    </div>
+        <section id="about" class="relative max-w-7xl mx-auto rounded-3xl bg-white px-6 py-24 overflow-hidden">
 
-    <script src="scripts/main.js"></script>
+            <!-- WATERMARK NAME -->
+            <div class="absolute inset-0 flex justify-center items-center pointer-events-none select-none">
+                <h1
+                    class="text-[150px] md:text-[200px] font-extrabold text-gray-300 opacity-20 transform -rotate-12 tracking-tight">
+                    AYMAN ATIF
+                </h1>
+            </div>
+
+            <!-- CONTENT OVER WATERMARK -->
+            <div class="relative z-10">
+
+                <!-- ABOUT TOP SECTION -->
+                <div class="relative z-10 mb-16 px-4 sm:px-6 md:px-16">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 items-center fade-group">
+
+                        <!-- LEFT : TITLE + DESCRIPTION -->
+                        <div class="text-center md:text-left">
+                            <h2 class="fade-in text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 title-font">
+                                About Me
+                            </h2>
+                            <p
+                                class="fade-in mt-6 text-base sm:text-lg md:text-xl text-gray-700 max-w-xl mx-auto md:mx-0">
+                                I’m Ayman Atif, a full-stack developer with expertise in web, desktop, and mobile
+                                applications.
+                                I combine creativity with functionality to deliver polished, high-performance projects.
+                                Over the years, I’ve tackled dozens of projects, always prioritizing clean code,
+                                scalability,
+                                and excellent user experience. I enjoy learning new technologies, optimizing workflows,
+                                and building solutions that help businesses grow.
+                            </p>
+                        </div>
+
+                        <!-- RIGHT : FLOATING IMAGE -->
+                        <div class="flex justify-center md:justify-end mt-10 md:mt-0 fade-in">
+                            <div class="relative w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 
+                  animate-[float_5s_ease-in-out_infinite]">
+                                <img src="assets/images/ayman-atif.jpeg" alt="Ayman Atif, web developer"
+                                    class="w-full h-full object-cover rounded-full shadow-2xl transition-all duration-700 hover:scale-105 hover:-rotate-2" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- SKILLS GRID -->
+                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 fade-group">
+
+                    <!-- FRONTEND -->
+                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center relative"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">HTML</h3>
+                        <p class="text-white text-sm">Semantic Markup & Accessibility</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">CSS / Tailwind</h3>
+                        <p class="text-gray-700 text-sm">Responsive Layouts & Design</p>
+                    </div>
+
+                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);">
+                        <h3 class="font-bold text-lg mb-2">JavaScript</h3>
+                        <p class="text-white text-sm">ES6+, React & Frontend Logic</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">Frontend Architecture</h3>
+                        <p class="text-gray-700 text-sm">Components & State Management</p>
+                    </div>
+
+                    <div class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">UI / UX</h3>
+                        <p class="text-white text-sm">User-Centered Design</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">API Design</h3>
+                        <p class="text-gray-700 text-sm">RESTful & JSON APIs</p>
+                    </div>
+
+                    <!-- BACKEND -->
+                    <div
+                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">C# / .NET</h3>
+                        <p class="text-white text-sm">Backend Services & APIs</p>
+                    </div>
+
+                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">Python</h3>
+                        <p class="text-gray-700 text-sm">Backend Scripting & Automation</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">Java</h3>
+                        <p class="text-white text-sm">Backend Services & Android Apps</p>
+                    </div>
+
+                    <!-- DATABASES -->
+                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">SQL / MySQL</h3>
+                        <p class="text-gray-700 text-sm">Data Modeling & Queries</p>
+                    </div>
+
+                    <div
+                        class="fade-in bg-purple-600 text-white rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center">
+                        <h3 class="font-bold text-lg mb-2">PostgreSQL</h3>
+                        <p class="text-white text-sm">Relational Database Management</p>
+                    </div>
+
+                    <div class="fade-in bg-white text-black rounded-3xl shadow-2xl h-32 p-6 flex flex-col justify-center"
+                        style="clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);">
+                        <h3 class="font-bold text-lg mb-2">Mobile Development</h3>
+                        <p class="text-gray-700 text-sm">iOS & Android Apps</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="work" class="w-full bg-neutral-900 text-white py-24 mt-8 fade-group">
+            <div class="max-w-3xl mx-auto text-center px-6">
+                <h2 class="fade-in text-5xl font-bold tracking-tight mb-6">UI Showcase</h2>
+                <p class="fade-in text-gray-400 text-lg leading-relaxed">
+                    A curated selection of interface templates and UI experiments, demonstrating clean design,
+                    thoughtful layouts,
+                    and smooth motion. Each example reflects my approach to building polished, high-quality user
+                    interfaces
+                    that balance aesthetics and usability.
+                </p>
+            </div>
+
+            <!-- PROJECT CONTAINER -->
+            <div class="max-w-6xl mx-auto mt-24 px-6 relative fade-in">
+
+                <!-- Floating UI Screens Wrapper -->
+                <div class="relative h-[600px] md:h-[700px] lg:h-[800px]">
+
+                    <!-- UI Screens -->
+                    <img src="assets/images/luxedwell-1.jpg" alt="UI Example 1: Modern interior layout"
+                        class="absolute w-48 md:w-64 lg:w-72 rounded-2xl shadow-2xl top-0 left-3 md:left-12 rotate-[2deg] hover:scale-105 transition-all" />
+
+                    <img src="assets/images/luxedwell-2.jpg" alt="UI Example 2: Clean interface layout"
+                        class="absolute w-40 md:w-56 lg:w-64 rounded-2xl shadow-2xl top-32 right-5 md:right-20 rotate-[-3deg] hover:scale-105 transition-all" />
+
+                    <img src="assets/images/luxedwell-3.jpg" alt="UI Example 3: Card-based interface design"
+                        class="absolute w-48 md:w-64 lg:w-72 rounded-2xl shadow-2xl bottom-10 left-10 rotate-[4deg] hover:scale-105 transition-all" />
+
+                    <img src="assets/images/luxedwell-4.jpg" alt="UI Example 4: Interactive layout demo"
+                        class="absolute w-40 md:w-56 lg:w-64 rounded-2xl shadow-2xl bottom-0 right-12 rotate-[5deg] hover:scale-105 transition-all" />
+
+                    <img src="assets/images/luxedwell-5.jpg" alt="UI Example 5: Central hero screen"
+                        class="absolute w-56 md:w-72 lg:w-80 rounded-3xl shadow-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-1deg] hover:scale-105 transition-all z-20" />
+
+                </div>
+
+                <!-- UI Text + CTA -->
+                <div class="mt-20 text-center max-w-3xl mx-auto">
+                    <h3 class="text-4xl font-bold mb-4 tracking-tight fade-in">LuxeDwell UI Template</h3>
+                    <p class="text-gray-300 leading-relaxed mb-8 fade-in">
+                        A clean, modern interface template showcasing elegant layouts, interactive elements,
+                        and visually pleasing hierarchy. Perfect for demonstrating UI design proficiency
+                        and front-end craftsmanship.
+                    </p>
+
+                    <a href="https://aymanbuilds.github.io/LuxeDwell/" target="_blank" class="fade-in inline-flex items-center gap-3 bg-white text-black px-7 py-3 rounded-full
+                hover:bg-neutral-200 transition-all shadow-lg">
+                        <span>Preview UI</span>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 fade-group">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <!-- Section Title + Description -->
+                <div class="text-center mb-16">
+                    <h2 class="fade-in text-5xl font-extrabold mb-6 title-font">Testimonials</h2>
+                    <p class="fade-in mt-6 text-lg text-gray-700 max-w-xl mx-auto">
+                        Hear from clients who have trusted me with their projects and loved the results.
+                    </p>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="fade-in grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Testimonial Card 1 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[2deg]">
+                        <p class="text-gray-800 mb-4">
+                            "Ayman built a desktop app for our e-commerce store. It works perfectly, and we continue
+                            collaborating for ongoing support."
+                        </p>
+                        <h3 class="font-bold">Simon</h3>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[1deg]">
+                        <p class="text-gray-800 mb-4">
+                            "Ayman developed two Odoo modules for our business, fully compliant with UK trading
+                            regulations. Excellent results!"
+                        </p>
+                        <h3 class="font-bold">Naseem</h3>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[1deg]">
+                        <p class="text-gray-800 mb-4">
+                            "He created a mobile app for our restaurant. We were thrilled with the results and continue
+                            receiving SEO support."
+                        </p>
+                        <h3 class="font-bold">Omar</h3>
+                    </div>
+
+                    <!-- Testimonial Card 4 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[2deg]">
+                        <p class="text-gray-800 mb-4">
+                            "Ayman helped our startup develop an AI-driven news solution MVP. It worked flawlessly and
+                            met all our expectations."
+                        </p>
+                        <h3 class="font-bold">Veelio</h3>
+                    </div>
+
+                    <!-- Testimonial Card 5 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform rotate-[1.5deg]">
+                        <p class="text-gray-800 mb-4">
+                            "He built an AI solution for our printing service. We were very satisfied with the quality
+                            and delivery."
+                        </p>
+                        <h3 class="font-bold">Daan</h3>
+                    </div>
+
+                    <!-- Testimonial Card 6 -->
+                    <div class="bg-gray-100 p-6 rounded-3xl transform -rotate-[1.5deg]">
+                        <p class="text-gray-800 mb-4">
+                            "Ayman created our website and handled SEO for our finance business. Exceptional work and
+                            very satisfied!"
+                        </p>
+                        <h3 class="font-bold">Susan</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-wrapper">
+
+                <!-- LEFT COLUMN -->
+                <div class="faq-left">
+                    <p class="mt-6 text-lg text-gray-700 max-w-xl mx-auto">
+                        Common Questions
+                    </p>
+                    <h2 class="text-5xl font-extrabold title-font">My FAQ</h2>
+
+                    <div class="flex">
+                        <a href="#contact"
+                            class="block w-auto self-start mt-10 flex items-center gap-3 bg-transparent border-2 border-neutral-900 text-neutral-900 p-1.5 pr-3.5 rounded-full shadow-md transition-all duration-300 hover:bg-neutral-900 hover:text-white hover:scale-105 hover:shadow-xl">
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-white text-neutral-900 rounded-full transition-all duration-300 hover:bg-neutral-900 hover:text-white">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="faq-right">
+
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq1">
+                        <label class="faq-question" for="faq1">What services do you offer?</label>
+                        <div class="faq-answer">
+                            I provide end-to-end development solutions including web, desktop, and mobile applications,
+                            as well as ongoing support, SEO, and optimization.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq2">
+                        <label class="faq-question" for="faq2">How do you price your projects?</label>
+                        <div class="faq-answer">
+                            Pricing depends on the project’s complexity and scope. I provide detailed quotes after
+                            understanding your requirements and goals.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq3">
+                        <label class="faq-question" for="faq3">What is your typical project timeline?</label>
+                        <div class="faq-answer">
+                            Timelines vary based on the type and size of the project. Smaller projects can take a few
+                            weeks, while larger solutions may take several months. I always provide a clear schedule
+                            upfront.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq4">
+                        <label class="faq-question" for="faq4">Do you offer post-launch support?</label>
+                        <div class="faq-answer">
+                            Yes, I offer maintenance, bug fixes, and ongoing support to ensure your application runs
+                            smoothly and stays up to date.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item">
+                        <input type="checkbox" id="faq5">
+                        <label class="faq-question" for="faq5">Which technologies do you specialize in?</label>
+                        <div class="faq-answer">
+                            I specialize in full-stack development using C#, .NET, Python, JavaScript, React, Tailwind
+                            CSS, SQL/NoSQL databases, and mobile development for iOS and Android.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-neutral-900 text-white py-24">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <h2 class="text-5xl font-extrabold mb-6 title-font text-center">
+                    Let's Make Something<br>Amazing Together
+                </h2>
+
+                <div class="flex flex-col md:flex-row md:divide-x md:divide-neutral-700 text-center mt-16">
+
+                    <!-- Item -->
+                    <div class="flex-1 px-8 py-10">
+                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Whatsapp</h3>
+                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
+                            <a href="https://wa.me/212688459384?text=Hi!" target="_blank">+212 688-459384</a>
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="flex-1 px-8 py-10">
+                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Email Address</h3>
+                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
+                            <a href="mailto:a95yman@gmail.com" target="_blank">a95yman@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="flex-1 px-8 py-10">
+                        <h3 class="text-sm text-neutral-400 mb-2 tracking-wide uppercase">Linkedin</h3>
+                        <p class="text-xl font-medium max-w-xs mx-auto leading-relaxed">
+                            <a href="https://www.linkedin.com/in/a95yman/">@a95yman</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="bg-neutral-900 text-white pb-20">
+            <div class="max-w-6xl mx-auto px-6">
+
+                <!-- Menu -->
+                <nav class="flex flex-wrap justify-center gap-8 text-sm mb-14 text-neutral-300">
+                    <a href="#home" class="hover:text-gray-300 transition">Home</a>
+                    <a href="#services" class="hover:text-gray-300 transition">Services</a>
+                    <a href="#about" class="hover:text-gray-300 transition">About</a>
+                    <a href="#work" class="hover:text-gray-300 transition">UI Showcase</a>
+                    <a href="#testimonials" class="hover:text-gray-300 transition">Testimonials</a>
+                </nav>
+
+                <!-- Main Footer CTA -->
+                <div class="text-center max-w-2xl mx-auto">
+                    <h3 class="text-3xl font-semibold mb-4">
+                        Your Ideas, My Code, Amazing Results.
+                    </h3>
+                    <p class="text-neutral-300 text-lg leading-relaxed mb-8">
+                        I specialize in web, desktop, and mobile applications, delivering modern, high-quality
+                        solutions. Let’s collaborate to turn your ideas into reality.
+                    </p>
+
+                    <div class="flex">
+                        <a href="https://wa.me/212688459384?text=Hi!" target="_blank"
+                            class="w-auto self-center mt-6 flex items-center gap-3 bg-neutral-900 text-white p-1.5 pr-3.5 rounded-full shadow hover:bg-neutral-800 transition mx-auto border border-neutral-700">
+                            <div
+                                class="w-10 h-10 flex items-center justify-center bg-white text-neutral-900 rounded-full">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        const bgName = document.getElementById("bgName"), rawText = bgName.textContent || "", words = rawText.trim().split(/\s+/), html = words.map((e => Array.from(e).map((e => `<span class="letter">${e}</span>`)).join(""))).join("<br>"); bgName.innerHTML = html; const letters = bgName.querySelectorAll(".letter"); let scrollTimeout; letters.forEach((e => { e.style.display = "inline-block", e.style.transition = "transform 0.45s cubic-bezier(.22,.9,.31,1), filter 0.45s ease", e.style.willChange = "transform, filter" })), window.addEventListener("scroll", (() => { const e = window.scrollY; letters.forEach(((t, n) => { let s = t, l = 0; for (; s.previousSibling;)s = s.previousSibling, "BR" === s.nodeName && l++; const r = .02 * l + n % 30 * .06, o = e * (.18 + .06 * l + n % 30 * .012) + 200, a = Math.min(e / (30 + n % 20), 10); 0 === e ? letters.forEach(((e, t) => { const n = .06 * t; e.style.transitionDelay = `${n}s`, e.style.transform = "translateY(0px)", e.style.filter = "blur(0px)" })) : (t.style.transitionDelay = `${r}s`, t.style.transform = `translateY(${o}px)`, t.style.filter = `blur(${a}px)`) })), clearTimeout(scrollTimeout), scrollTimeout = setTimeout((() => { letters.forEach((e => { e.style.filter = "blur(0px)", e.style.transitionDelay = "0s" })) }), 120) })); const menuBtn = document.getElementById("menuBtn"), mobileMenu = document.getElementById("mobileMenu"); let menuOpen = !1; function openMenu() { mobileMenu.style.transform = "translateY(0)", mobileMenu.classList.add("show"), menuOpen = !0 } function closeMenu() { mobileMenu.style.transform = "translateY(100%)", mobileMenu.classList.remove("show"), menuOpen = !1 } menuBtn.addEventListener("click", (() => { menuOpen ? closeMenu() : openMenu() })), mobileMenu.querySelectorAll("a").forEach((e => { e.addEventListener("click", (() => { closeMenu() })) })); const header = document.querySelector("header.main"); window.addEventListener("scroll", (() => { window.scrollY > 450 ? header.classList.add("bg-eaeaf3") : header.classList.remove("bg-eaeaf3") })); const fadeGroups = document.querySelectorAll(".fade-group"); fadeGroups.forEach((e => { const t = e.querySelectorAll(".fade-in"); new IntersectionObserver(((n, s) => { n.forEach((n => { n.isIntersecting && (e.classList.add("visible"), t.forEach(((e, t) => { e.style.transitionDelay = .1 * t + "s" })), s.unobserve(n.target)) })) }), { threshold: .2 }).observe(e) }));
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 </body>
 
